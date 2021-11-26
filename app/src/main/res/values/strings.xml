@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">Calculadora</string>
+
+    <string name="textUno">1</string>
+    <string name="textDos">2</string>
+    <string name="textTres">3</string>
+    <string name="textCuatro">4</string>
+    <string name="textCinco">5</string>
+    <string name="textSeis">6</string>
+    <string name="textSiete">7</string>
+    <string name="textOcho">8</string>
+    <string name="textNueve">9</string>
+    <string name="textCero">0</string>
+
+    <string name="borrarText">C</string>
+    <string name="divisionText">/</string>
+    <string name="multiplicarText">×</string>
+    <string name="sumarText">+</string>
+    <string name="restarText">-</string>
+    <string name="restoText">%</string>
+    <string name="decimalText">.</string>
 </resources>
