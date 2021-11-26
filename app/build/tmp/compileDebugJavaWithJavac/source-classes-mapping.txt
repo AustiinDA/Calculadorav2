@@ -1,2 +1,4 @@
 com/dam2/agus/calculadora/BuildConfig.java
  com.dam2.agus.calculadora.BuildConfig
+com/dam2/agus/calculadora/databinding/ActivityMainBinding.java
+ com.dam2.agus.calculadora.databinding.ActivityMainBinding
