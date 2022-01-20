@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\2diag\\Documents\\Agus\\DAM 2\\Android\\Calculadora\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-small-v4\\values-small-v4.xml",
+            "outputFile": "C:\\Users\\Alumno_FP\\AndroidStudioProjects\\Calculadora\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-small-v4\\values-small-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\2diag\\.gradle\\caches\\transforms-3\\9212c5c068444ec172005342347b7e15\\transformed\\material-1.5.0-alpha05\\res\\values-small-v4\\values-small-v4.xml",
+                    "source": "C:\\Users\\Alumno_FP\\.gradle\\caches\\transforms-3\\9212c5c068444ec172005342347b7e15\\transformed\\material-1.5.0-alpha05\\res\\values-small-v4\\values-small-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

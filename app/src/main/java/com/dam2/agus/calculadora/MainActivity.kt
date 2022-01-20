@@ -13,6 +13,7 @@ class MainActivity : AppCompatActivity() {
     var calculo1: Int = 0
     var calculo2: Int = 0
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -40,31 +41,31 @@ class MainActivity : AppCompatActivity() {
     }*/
 
     fun decimalPulsado(vista: View) {
-        actualizarTextoEsp(resources.getString(R.string.decimalText))
+        actualizarTextoPunto(resources.getString(R.string.decimalText))
     }
 
     fun divPulsado(vista: View) {
-        actualizarTextoEsp(resources.getString(R.string.divisionText))
+        actualizarTextoOp(resources.getString(R.string.divisionText))
     }
 
     fun mulPulsado(vista: View) {
-        actualizarTextoEsp(resources.getString(R.string.multiplicarText))
+        actualizarTextoOp(resources.getString(R.string.multiplicarText))
     }
 
     fun sumarPulsado(vista: View) {
-        actualizarTextoEsp(resources.getString(R.string.sumarText))
+        actualizarTextoOp(resources.getString(R.string.sumarText))
     }
 
     fun restaPulsado(vista: View) {
-        actualizarTextoEsp(resources.getString(R.string.restarText))
+        actualizarTextoOp(resources.getString(R.string.restarText))
     }
 
     fun restoPulsado(vista: View) {
-        actualizarTextoEsp(resources.getString(R.string.restoText))
+        actualizarTextoOp(resources.getString(R.string.restoText))
     }
 
     fun ceroPulsado(vista: View) {
-        actualizarTextoNum(resources.getString(R.string.textCero))
+        actualizarTextoOp(resources.getString(R.string.textCero))
     }
 
 
@@ -104,12 +105,21 @@ class MainActivity : AppCompatActivity() {
         actualizarTextoNum(resources.getString(R.string.textNueve))
     }
 
-    fun actualizarTextoEsp(lineaAInsertar: String) {
+    fun actualizarTextoPunto(lineaAInsertar: String) {
         var lineaOld: String = mostrarCalculo.text.toString()
 
         if (!mostrarCalculo.text.contains(".")) {
             mostrarCalculo.text = String.format("%s%s", lineaOld, lineaAInsertar)
-        } else if (!mostrarCalculo.text.contains("+")) {
+        }
+
+    }
+
+    fun actualizarTextoOp(lineaAInsertar: String) {
+        var lineaOld: String = mostrarCalculo.text.toString()
+       // if (mostrarCalculo.) {
+         //   mostrarCalculo.text = ""
+        //}
+        if (!mostrarCalculo.text.contains("+")) {
             mostrarCalculo.text = String.format("%s%s", lineaOld, lineaAInsertar)
         } else if (!mostrarCalculo.text.contains("×")) {
             mostrarCalculo.text = String.format("%s%s", lineaOld, lineaAInsertar)
