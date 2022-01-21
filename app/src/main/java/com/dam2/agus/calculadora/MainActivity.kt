@@ -38,7 +38,7 @@ class MainActivity : AppCompatActivity() {
     fun dividirPulsado(vista: View) {
         mostrarCalculo.text.toString().toFloat()
 
-    }*/
+    }
 
     fun decimalPulsado(vista: View) {
         actualizarTextoPunto(resources.getString(R.string.decimalText))
