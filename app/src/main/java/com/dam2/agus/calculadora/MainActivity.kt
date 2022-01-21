@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
 
     var calculo1: Int = 0
     var calculo2: Int = 0
-
+    
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -38,7 +38,7 @@ class MainActivity : AppCompatActivity() {
     fun dividirPulsado(vista: View) {
         mostrarCalculo.text.toString().toFloat()
 
-    }
+    }*/
 
     fun decimalPulsado(vista: View) {
         actualizarTextoPunto(resources.getString(R.string.decimalText))
@@ -116,9 +116,7 @@ class MainActivity : AppCompatActivity() {
 
     fun actualizarTextoOp(lineaAInsertar: String) {
         var lineaOld: String = mostrarCalculo.text.toString()
-       // if (mostrarCalculo.) {
-         //   mostrarCalculo.text = ""
-        //}
+
         if (!mostrarCalculo.text.contains("+")) {
             mostrarCalculo.text = String.format("%s%s", lineaOld, lineaAInsertar)
         } else if (!mostrarCalculo.text.contains("×")) {
