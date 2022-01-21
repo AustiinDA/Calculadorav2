@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
 
     var calculo1: Int = 0
     var calculo2: Int = 0
-    
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -44,28 +44,13 @@ class MainActivity : AppCompatActivity() {
         actualizarTextoPunto(resources.getString(R.string.decimalText))
     }
 
-    fun divPulsado(vista: View) {
-        actualizarTextoOp(resources.getString(R.string.divisionText))
-    }
+    fun igualPulsado(vista: View) {
 
-    fun mulPulsado(vista: View) {
-        actualizarTextoOp(resources.getString(R.string.multiplicarText))
     }
-
     fun sumarPulsado(vista: View) {
-        actualizarTextoOp(resources.getString(R.string.sumarText))
-    }
+        mostrarCalculo.text
+        mostrarCalculo.text = ""
 
-    fun restaPulsado(vista: View) {
-        actualizarTextoOp(resources.getString(R.string.restarText))
-    }
-
-    fun restoPulsado(vista: View) {
-        actualizarTextoOp(resources.getString(R.string.restoText))
-    }
-
-    fun ceroPulsado(vista: View) {
-        actualizarTextoOp(resources.getString(R.string.textCero))
     }
 
 
@@ -110,28 +95,13 @@ class MainActivity : AppCompatActivity() {
 
         if (!mostrarCalculo.text.contains(".")) {
             mostrarCalculo.text = String.format("%s%s", lineaOld, lineaAInsertar)
-        }
-
-    }
-
-    fun actualizarTextoOp(lineaAInsertar: String) {
-        var lineaOld: String = mostrarCalculo.text.toString()
-
-        if (!mostrarCalculo.text.contains("+")) {
-            mostrarCalculo.text = String.format("%s%s", lineaOld, lineaAInsertar)
-        } else if (!mostrarCalculo.text.contains("×")) {
-            mostrarCalculo.text = String.format("%s%s", lineaOld, lineaAInsertar)
-        } else if (!mostrarCalculo.text.contains("/")) {
-            mostrarCalculo.text = String.format("%s%s", lineaOld, lineaAInsertar)
-        } else if (!mostrarCalculo.text.contains("-")) {
-            mostrarCalculo.text = String.format("%s%s", lineaOld, lineaAInsertar)
-        } else if (!mostrarCalculo.text.contains("%")) {
-            mostrarCalculo.text = String.format("%s%s", lineaOld, lineaAInsertar)
-        } else {
+        } else if (mostrarCalculo.text.contains(".")) {
 
         }
 
     }
+
+
 }
 
 

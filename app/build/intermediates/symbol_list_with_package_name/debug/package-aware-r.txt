@@ -2663,18 +2663,15 @@ id btn7
 id btn8
 id btn9
 id btnC
-id btnCe
 id btnDel
 id btnIgual
 id btnMas
 id btnMenos
 id btnMult
 id btnPunto
-id btnResto
 id button10
 id button11
 id button12
-id button13
 id button14
 id button15
 id button16
@@ -2686,7 +2683,6 @@ id button20
 id button23
 id button4
 id button5
-id button6
 id button8
 id button9
 id buttonPanel
@@ -2788,7 +2784,6 @@ id ghost_view_holder
 id gone
 id graph
 id graph_wrap
-id gridLayout
 id group_divider
 id grouping
 id groups
