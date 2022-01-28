@@ -19,27 +19,23 @@
         android:textColor="#AB9191"
         android:textSize="60sp"
         android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.586"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TableLayout
-        android:layout_width="381dp"
-        android:layout_height="563dp"
-        android:layout_marginTop="28dp"
-        android:paddingLeft="10px"
-        android:paddingRight="10px"
-        android:stretchColumns="*"
-        android:weightSum="4"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="364dp"
+        android:layout_height="83dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/btnDiv"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.566"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mostrarCalculoTV">
+        app:layout_constraintStart_toStartOf="parent">
 
         <TableRow
-            android:layout_width="match_parent"
+            android:layout_width="375dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:weightSum="3">
@@ -52,6 +48,7 @@
                 android:layout_marginHorizontal="5dp"
                 android:layout_marginVertical="5dp"
                 android:backgroundTint="#6B6078"
+                android:onClick="BorrarPulsado"
                 android:textColor="#FFFFFF"
                 android:textSize="22sp"
                 app:cornerRadius="11dp"
@@ -61,7 +58,8 @@
                 app:layout_constraintEnd_toStartOf="@+id/button11"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toEndOf="@+id/button8"
-                app:layout_constraintTop_toBottomOf="@+id/button4" />
+                app:layout_constraintTop_toBottomOf="@+id/button4"
+                tools:ignore="SpeakableTextPresentCheck" />
 
             <Button
                 android:id="@+id/btnC"
@@ -81,9 +79,43 @@
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toEndOf="@+id/button2" />
 
+            <Button
+                android:id="@+id/btnPro"
+                android:layout_width="178dp"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginVertical="5dp"
+                android:backgroundTint="#6B6078"
+                android:onClick=""
+                android:text="Pro"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp"
+                app:cornerRadius="11dp"
+                app:layout_constraintBottom_toTopOf="@+id/button9"
+                app:layout_constraintEnd_toStartOf="@+id/button5"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/button2" />
+
         </TableRow>
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/btnDiv"
+        android:layout_width="374dp"
+        android:layout_height="366dp"
+        android:onClick="dividirPulsado"
+        android:paddingLeft="10px"
+        android:paddingRight="10px"
+        android:stretchColumns="*"
+        android:weightSum="4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent">
 
         <TableRow
+            android:id="@+id/btnResta"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
@@ -99,12 +131,7 @@
                 android:text="9"
                 android:textColor="#000000"
                 android:textSize="22sp"
-                app:cornerRadius="11dp"
-                app:layout_constraintBottom_toTopOf="@+id/button19"
-                app:layout_constraintEnd_toStartOf="@+id/button11"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toEndOf="@+id/button8"
-                app:layout_constraintTop_toBottomOf="@+id/button4" />
+                app:cornerRadius="11dp" />
 
             <Button
                 android:id="@+id/btn8"
@@ -118,11 +145,7 @@
                 android:text="8"
                 android:textColor="#000000"
                 android:textSize="22sp"
-                app:cornerRadius="11dp"
-                app:layout_constraintBottom_toTopOf="@+id/button8"
-                app:layout_constraintEnd_toStartOf="@+id/button4"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toStartOf="parent" />
+                app:cornerRadius="11dp" />
 
             <Button
                 android:id="@+id/btn7"
@@ -136,11 +159,7 @@
                 android:text="7"
                 android:textColor="#000000"
                 android:textSize="22sp"
-                app:cornerRadius="11dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toEndOf="@+id/button18"
-                app:layout_constraintTop_toBottomOf="@+id/button17" />
+                app:cornerRadius="11dp" />
 
             <Button
                 android:id="@+id/btnMenos"
@@ -154,12 +173,7 @@
                 android:text="-"
                 android:textColor="#FFFFFF"
                 android:textSize="22sp"
-                app:cornerRadius="11dp"
-                app:layout_constraintBottom_toTopOf="@+id/button23"
-                app:layout_constraintEnd_toStartOf="@+id/divi"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toEndOf="@+id/button12"
-                app:layout_constraintTop_toBottomOf="@+id/button16" />
+                app:cornerRadius="11dp" />
 
         </TableRow>
 
@@ -179,11 +193,7 @@
                 android:text="4"
                 android:textColor="#000000"
                 android:textSize="22sp"
-                app:cornerRadius="11dp"
-                app:layout_constraintEnd_toStartOf="@+id/divi"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toEndOf="@+id/button12"
-                app:layout_constraintTop_toBottomOf="@+id/button18" />
+                app:cornerRadius="11dp" />
 
             <Button
                 android:id="@+id/btn5"
@@ -197,12 +207,7 @@
                 android:text="5"
                 android:textColor="#000000"
                 android:textSize="22sp"
-                app:cornerRadius="11dp"
-                app:layout_constraintBottom_toTopOf="@+id/button12"
-                app:layout_constraintEnd_toStartOf="@+id/button16"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toEndOf="@+id/button14"
-                app:layout_constraintTop_toBottomOf="@+id/button9" />
+                app:cornerRadius="11dp" />
 
             <Button
                 android:id="@+id/btn6"
@@ -216,12 +221,7 @@
                 android:text="6"
                 android:textColor="#000000"
                 android:textSize="22sp"
-                app:cornerRadius="11dp"
-                app:layout_constraintBottom_toTopOf="@+id/button15"
-                app:layout_constraintEnd_toStartOf="@+id/button19"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/button8" />
+                app:cornerRadius="11dp" />
 
             <Button
                 android:id="@+id/btnMas"
@@ -255,11 +255,7 @@
                 android:text="1"
                 android:textColor="#000000"
                 android:textSize="22sp"
-                app:cornerRadius="11dp"
-                app:layout_constraintEnd_toStartOf="@+id/button12"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/button15" />
+                app:cornerRadius="11dp" />
 
             <Button
                 android:id="@+id/btn2"
@@ -273,11 +269,7 @@
                 android:text="2"
                 android:textColor="#000000"
                 android:textSize="22sp"
-                app:cornerRadius="11dp"
-                app:layout_constraintBottom_toTopOf="@+id/button10"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toEndOf="@+id/button5" />
+                app:cornerRadius="11dp" />
 
             <Button
                 android:id="@+id/btn3"
@@ -291,12 +283,7 @@
                 android:text="3"
                 android:textColor="#000000"
                 android:textSize="22sp"
-                app:cornerRadius="11dp"
-                app:layout_constraintBottom_toTopOf="@+id/button16"
-                app:layout_constraintEnd_toStartOf="@+id/button10"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toEndOf="@+id/button9"
-                app:layout_constraintTop_toBottomOf="@+id/button5" />
+                app:cornerRadius="11dp" />
 
             <Button
                 android:id="@+id/btnMult"
@@ -306,16 +293,12 @@
                 android:layout_marginHorizontal="5dp"
                 android:layout_marginVertical="5dp"
                 android:backgroundTint="#6B6078"
-                android:onClick="mulPulsado"
+                android:onClick="multiplicadoPulsado"
                 android:text="×"
                 android:textColor="#FFFFFF"
                 android:textSize="22sp"
                 app:cornerRadius="11dp"
-                app:layout_constraintBottom_toTopOf="@+id/button20"
-                app:layout_constraintEnd_toStartOf="@+id/button12"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/button14" />
+                tools:ignore="DuplicateIds" />
 
         </TableRow>
 
@@ -348,12 +331,7 @@
                 android:text="."
                 android:textColor="#000000"
                 android:textSize="22sp"
-                app:cornerRadius="11dp"
-                app:layout_constraintBottom_toTopOf="@+id/button17"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toEndOf="@+id/button16"
-                app:layout_constraintTop_toBottomOf="@+id/button10" />
+                app:cornerRadius="11dp" />
 
             <Button
                 android:id="@+id/btnIgual"
@@ -368,10 +346,7 @@
                 android:textColor="#000000"
                 android:textSize="22sp"
                 app:cornerRadius="11dp"
-                app:layout_constraintEnd_toStartOf="@+id/button18"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toEndOf="@+id/button20"
-                app:layout_constraintTop_toBottomOf="@+id/button12" />
+ />
 
             <Button
                 android:id="@+id/botonDiv"
@@ -381,15 +356,12 @@
                 android:layout_marginHorizontal="5dp"
                 android:layout_marginVertical="5dp"
                 android:backgroundTint="#6B6078"
-                android:onClick="divPulsado"
+                android:onClick="dividirPulsado"
                 android:text="/"
                 android:textColor="#FFFFFF"
                 android:textSize="22sp"
                 app:cornerRadius="11dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toEndOf="@+id/button18"
-                app:layout_constraintTop_toBottomOf="@+id/button17" />
+/>
 
         </TableRow>
     </TableLayout>
