@@ -1,5 +1,6 @@
 package com.dam2.agus.calculadora
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -23,6 +24,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        val btnProAvz = findViewById<Button>(R.id.btnPro)
+
+        btnProAvz.setOnClickListener{
+            val intent = Intent(this, mcd_mcm::class.java)
+            startActivity(intent)
+        }
 
         mostrarCalculo = findViewById(R.id.mostrarCalculoTV)
     }
@@ -167,7 +174,9 @@ class MainActivity : AppCompatActivity() {
         } else if (mostrarCalculo.text.contains(".")) {
         }
     }
+
 }
+
 
 
 

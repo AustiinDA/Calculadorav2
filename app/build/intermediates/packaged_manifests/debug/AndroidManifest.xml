@@ -20,6 +20,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.Calculadora" >
         <activity
+            android:name="com.dam2.agus.calculadora.mcd_mcm"
+            android:exported="false" />
+        <activity
             android:name="com.dam2.agus.calculadora.MainActivity"
             android:exported="true" >
             <intent-filter>

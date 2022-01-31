@@ -87,7 +87,7 @@
                 android:layout_marginHorizontal="5dp"
                 android:layout_marginVertical="5dp"
                 android:backgroundTint="#6B6078"
-                android:onClick=""
+                android:onClick="irAActividad"
                 android:text="Pro"
                 android:textColor="#FFFFFF"
                 android:textSize="22sp"
