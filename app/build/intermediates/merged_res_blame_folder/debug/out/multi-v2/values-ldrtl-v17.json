@@ -4,7 +4,7 @@
             "outputFile": "C:\\Users\\Alumno_FP\\AndroidStudioProjects\\Calculadora\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ldrtl-v17\\values-ldrtl-v17.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Alumno_FP\\.gradle\\caches\\transforms-3\\302b3e676fb7b2956b570321d154cb8e\\transformed\\material-1.5.0-alpha05\\res\\values-ldrtl-v17\\values-ldrtl-v17.xml",
+                    "source": "C:\\Users\\Alumno_FP\\.gradle\\caches\\transforms-3\\59052db8b8bec07092c266c7691da2b2\\transformed\\material-1.6.0-alpha02\\res\\values-ldrtl-v17\\values-ldrtl-v17.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

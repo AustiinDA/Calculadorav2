@@ -8,6 +8,10 @@
         "source": "C:\\Users\\Alumno_FP\\AndroidStudioProjects\\Calculadora\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
+        "merged": "C:\\Users\\Alumno_FP\\AndroidStudioProjects\\Calculadora\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_calculadora_determinantes.xml.flat",
+        "source": "C:\\Users\\Alumno_FP\\AndroidStudioProjects\\Calculadora\\app\\src\\main\\res\\layout\\activity_calculadora_determinantes.xml"
+    },
+    {
         "merged": "C:\\Users\\Alumno_FP\\AndroidStudioProjects\\Calculadora\\app\\build\\intermediates\\merged_res\\debug\\layout_mcm_mcd_activity.xml.flat",
         "source": "C:\\Users\\Alumno_FP\\AndroidStudioProjects\\Calculadora\\app\\src\\main\\res\\layout\\mcm_mcd_activity.xml"
     },
@@ -18,6 +22,10 @@
     {
         "merged": "C:\\Users\\Alumno_FP\\AndroidStudioProjects\\Calculadora\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
         "source": "C:\\Users\\Alumno_FP\\AndroidStudioProjects\\Calculadora\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\Alumno_FP\\AndroidStudioProjects\\Calculadora\\app\\build\\intermediates\\merged_res\\debug\\menu_menu_drawer_nav.xml.flat",
+        "source": "C:\\Users\\Alumno_FP\\AndroidStudioProjects\\Calculadora\\app\\src\\main\\res\\menu\\menu_drawer_nav.xml"
     },
     {
         "merged": "C:\\Users\\Alumno_FP\\AndroidStudioProjects\\Calculadora\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_main.xml.flat",
