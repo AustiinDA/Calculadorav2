@@ -10,92 +10,63 @@
 
     <TextView
         android:id="@+id/textoResul2"
-        android:layout_width="176dp"
-        android:layout_height="58dp"
+        android:layout_width="108dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
         android:textAlignment="center"
         android:textColor="@color/md_theme_dark_onBackground"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/textoDescripcion6"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.594"
-        app:layout_constraintStart_toEndOf="@+id/textoDescripcion6"
-        app:layout_constraintTop_toBottomOf="@+id/textoResul1"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintEnd_toStartOf="@+id/textoDescripcion6"
+        app:layout_constraintHorizontal_bias="0.452"
+        app:layout_constraintStart_toEndOf="@+id/etNum1"
+        app:layout_constraintTop_toBottomOf="@+id/textoDescripcion2" />
 
     <TextView
         android:id="@+id/textoResul1"
-        android:layout_width="174dp"
-        android:layout_height="62dp"
-        android:layout_marginTop="88dp"
-        android:layout_marginEnd="32dp"
+        android:layout_width="108dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
         android:textAlignment="center"
         android:textColor="@color/md_theme_dark_onBackground"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/textoDescripcion5"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textoDescripcion4"
-        app:layout_constraintVertical_bias="0.571" />
+        app:layout_constraintBottom_toTopOf="@+id/btnCalcular"
+        app:layout_constraintEnd_toStartOf="@+id/textoDescripcion5"
+        app:layout_constraintHorizontal_bias="0.465"
+        app:layout_constraintStart_toEndOf="@+id/etNum2"
+        app:layout_constraintTop_toBottomOf="@+id/textoResul2"
+        app:layout_constraintVertical_bias="0.028" />
 
     <TextView
         android:id="@+id/textoDescripcion6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
-        android:text="El Mcm es:  "
+        android:layout_marginEnd="44dp"
+        android:text="MCM"
         android:textAlignment="center"
         android:textColor="@color/md_theme_dark_onBackground"
         android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textoResul2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.174"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textoDescripcion5" />
+        app:layout_constraintTop_toTopOf="@+id/textoResul2" />
 
     <TextView
         android:id="@+id/textoDescripcion5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="84dp"
-        android:text="El Mcd es:  "
+        android:layout_marginEnd="52dp"
+        android:text="MCD"
         android:textAlignment="center"
         android:textColor="@color/md_theme_dark_onBackground"
         android:textSize="20sp"
-        app:layout_constraintEnd_toStartOf="@+id/textoResul1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textoDescripcion4" />
-
-    <TextView
-        android:id="@+id/textoDescripcion4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:text="Resultado: "
-        android:textAlignment="center"
-        android:textColor="@color/md_theme_dark_onBackground"
-        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textoResul1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnCalcular" />
-
-    <TextView
-        android:id="@+id/textoDescripcion3"
-        android:layout_width="21dp"
-        android:layout_height="26dp"
-        android:text="y"
-        android:textAlignment="center"
-        android:textColor="@color/md_theme_dark_onBackground"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/etNum1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.117"
-        app:layout_constraintStart_toEndOf="@+id/etNum1"
-        app:layout_constraintTop_toTopOf="@+id/etNum1" />
+        app:layout_constraintTop_toTopOf="@+id/textoResul1" />
 
     <TextView
         android:id="@+id/textoDescripcion2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="152dp"
+        android:layout_marginTop="24dp"
         android:text="Introduce dos números: "
         android:textAlignment="center"
         android:textColor="@color/md_theme_dark_onBackground"
@@ -103,31 +74,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textoDescripcion"
-        android:layout_width="410dp"
-        android:layout_height="80dp"
-        android:layout_marginTop="60dp"
-        android:text="Calculadora de máximo común divisor y mínimo común múltiplo"
-        android:textAlignment="center"
-        android:textColor="@color/md_theme_dark_onBackground"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/textoDescripcion2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.219" />
+        app:layout_constraintTop_toBottomOf="@+id/cardView" />
 
     <EditText
         android:id="@+id/etNum1"
         android:layout_width="109dp"
         android:layout_height="51dp"
-        android:layout_marginStart="64dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="32dp"
         android:ems="10"
+        android:gravity="center"
         android:hint="Número 1"
         android:inputType="textPersonName"
         android:textColor="@color/md_theme_dark_onBackground"
@@ -139,30 +95,53 @@
         android:id="@+id/etNum2"
         android:layout_width="108dp"
         android:layout_height="50dp"
-        android:layout_marginStart="20dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="24dp"
         android:ems="10"
+        android:gravity="center"
         android:hint="Número 2"
         android:inputType="textPersonName"
         android:textColor="@color/md_theme_dark_onBackground"
         android:textColorHint="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="@+id/textoDescripcion3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/textoDescripcion3"
-        app:layout_constraintTop_toTopOf="@+id/textoDescripcion3"
-        app:layout_constraintVertical_bias="0.458" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNum1" />
 
     <Button
         android:id="@+id/btnCalcular"
-        android:layout_width="215dp"
-        android:layout_height="70dp"
-        android:layout_marginTop="92dp"
-        android:text="Calcular"
+        android:layout_width="257dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="384dp"
+        android:text="CALCULAR"
         android:textColor="@color/md_theme_dark_onBackground"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textoDescripcion3" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="386dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="16dp"
+        app:cardBackgroundColor="#4E3180"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.458"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textoDescripcion"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|center_horizontal"
+            android:text="Calculadora de máximo común divisor y mínimo común múltiplo"
+            android:textAlignment="gravity"
+            android:textColor="@color/md_theme_dark_onSecondaryContainer"
+            android:textSize="20sp"
+            android:typeface="sans" />
+    </androidx.cardview.widget.CardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
