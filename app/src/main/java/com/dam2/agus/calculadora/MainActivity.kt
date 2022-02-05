@@ -5,8 +5,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
 import android.view.View
-import android.widget.Button
-import android.widget.Switch
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
@@ -45,7 +43,7 @@ class MainActivity : AppCompatActivity() {
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         navVista.setNavigationItemSelectedListener {
-            val intent = Intent(this, mcd_mcm::class.java)
+            val intent = Intent(this, McdYMcm::class.java)
             when (it.itemId) {
                 R.id.miItem1 -> Toast.makeText(
                     applicationContext,

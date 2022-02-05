@@ -13,7 +13,7 @@
             android:name=".CalculadoraDeterminantes"
             android:exported="false" />
         <activity
-            android:name=".mcd_mcm"
+            android:name=".McdYMcm"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

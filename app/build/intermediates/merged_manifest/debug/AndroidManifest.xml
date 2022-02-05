@@ -23,7 +23,7 @@
             android:name="com.dam2.agus.calculadora.CalculadoraDeterminantes"
             android:exported="false" />
         <activity
-            android:name="com.dam2.agus.calculadora.mcd_mcm"
+            android:name="com.dam2.agus.calculadora.McdYMcm"
             android:exported="false" />
         <activity
             android:name="com.dam2.agus.calculadora.MainActivity"
