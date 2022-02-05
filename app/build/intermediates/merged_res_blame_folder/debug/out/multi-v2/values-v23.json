@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Alumno_FP\\AndroidStudioProjects\\Calculadora\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
+            "outputFile": "C:\\Users\\2diag\\AndroidStudioProjects\\Calculadorav2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Alumno_FP\\.gradle\\caches\\transforms-3\\450710a86d7bc2f56724d3dfc3c72980\\transformed\\appcompat-1.4.1\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\2diag\\.gradle\\caches\\transforms-3\\23b76ffe80af4d27184e38abe59be150\\transformed\\appcompat-1.4.1\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,20,34,35,36,39,43,44,45,46",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -15,7 +15,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Alumno_FP\\.gradle\\caches\\transforms-3\\5c09fdc1db155735c85d7510cc820088\\transformed\\cardview-1.0.0\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\2diag\\.gradle\\caches\\transforms-3\\f65d52342d9c88af4c02870300222bc1\\transformed\\cardview-1.0.0\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -34,7 +34,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Alumno_FP\\.gradle\\caches\\transforms-3\\59052db8b8bec07092c266c7691da2b2\\transformed\\material-1.6.0-alpha02\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\2diag\\.gradle\\caches\\transforms-3\\216a0e55c362014aa07b738a23943960\\transformed\\material-1.6.0-alpha02\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2,5,8,13,17,20,23,26,31,34,38",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4",

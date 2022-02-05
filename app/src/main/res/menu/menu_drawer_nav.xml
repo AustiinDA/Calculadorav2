@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:title="Item1" />
-    <item android:title="Item2" />
-    <item android:title="Item3" />
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/miItem1"
+            android:icon="@drawable/ic_baseline_calculate_24"
+            android:title="Calculadora estándar" />
+
+        <item
+            android:id="@+id/miItem2"
+            android:icon="@drawable/ic_baseline_input_24"
+            android:title="Calculadora de MCM y MCD" />
+        <item
+            android:id="@+id/miItem3"
+            android:icon="@drawable/ic_baseline_grid_on_24"
+            android:title="Ecuaciones" />
+
+    </group>
+
 </menu>

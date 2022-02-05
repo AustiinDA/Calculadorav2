@@ -2520,6 +2520,10 @@ drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
 drawable dw_pantalla
+drawable entrada_custom
+drawable ic_baseline_calculate_24
+drawable ic_baseline_grid_on_24
+drawable ic_baseline_input_24
 drawable ic_clock_black_24dp
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
@@ -2695,9 +2699,9 @@ id btnIgual
 id btnMas
 id btnMenos
 id btnMult
-id btnPro
 id btnPunto
 id btnResta
+id button
 id button11
 id button19
 id button2
@@ -2759,7 +2763,6 @@ id design_menu_item_action_area
 id design_menu_item_action_area_stub
 id design_menu_item_text
 id design_navigation_view
-id determinantesDrwerLyt
 id dialog_button
 id dimensions
 id direct
@@ -2776,11 +2779,21 @@ id dragLeft
 id dragRight
 id dragStart
 id dragUp
+id drawerLayout
 id dropdown_menu
 id easeIn
 id easeInOut
 id easeOut
 id east
+id editTextNumber10
+id editTextNumber11
+id editTextNumber12
+id editTextNumber13
+id editTextNumber14
+id editTextNumber15
+id editTextNumber7
+id editTextNumber8
+id editTextNumber9
 id edit_query
 id elastic
 id end
@@ -2799,6 +2812,7 @@ id fill_vertical
 id filled
 id fitToContents
 id fixed
+id flContent
 id flip
 id floating
 id forever
@@ -2817,6 +2831,7 @@ id header_title
 id hideable
 id home
 id homeAsUp
+id home_content
 id honorRequest
 id horizontal
 id horizontal_only
@@ -2873,6 +2888,9 @@ id material_timepicker_ok_button
 id material_timepicker_view
 id material_value_index
 id message
+id miItem1
+id miItem2
+id miItem3
 id middle
 id mini
 id month_grid
@@ -2907,6 +2925,7 @@ id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
+id navVista
 id navigation_bar_item_active_indicator_view
 id navigation_bar_item_icon_container
 id navigation_bar_item_icon_view
@@ -3019,6 +3038,7 @@ id submenuarrow
 id submit_area
 id supportScrollUp
 id tabMode
+id tableLayout
 id tag_accessibility_actions
 id tag_accessibility_clickable_spans
 id tag_accessibility_heading
@@ -3043,6 +3063,8 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
+id textView
+id textView2
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3063,6 +3085,7 @@ id title
 id titleDividerNoCustom
 id title_template
 id toggle
+id toolbar
 id top
 id topPanel
 id touch_outside
@@ -3263,6 +3286,7 @@ layout mtrl_picker_header_title_text
 layout mtrl_picker_header_toggle
 layout mtrl_picker_text_input_date
 layout mtrl_picker_text_input_date_range
+layout nav_header
 layout notification_action
 layout notification_action_tombstone
 layout notification_template_custom_big
@@ -3288,6 +3312,7 @@ layout text_view_with_line_height_from_layout
 layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
+layout toolbar
 menu example_menu
 menu example_menu2
 menu menu_drawer_nav
@@ -3460,6 +3485,7 @@ style Animation_AppCompat_DropDownUp
 style Animation_AppCompat_Tooltip
 style Animation_Design_BottomSheetDialog
 style Animation_MaterialComponents_BottomSheetDialog
+style AppTheme
 style Base_AlertDialog_AppCompat
 style Base_AlertDialog_AppCompat_Light
 style Base_Animation_AppCompat_Dialog
