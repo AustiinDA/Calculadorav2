@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Calculadora">
         <activity
+            android:name=".Determinantes3X3"
+            android:exported="false" />
+        <activity
+            android:name=".Determinantes2X2"
+            android:exported="false" />
+        <activity
             android:name=".CalculadoraDeterminantes"
             android:exported="false" />
         <activity

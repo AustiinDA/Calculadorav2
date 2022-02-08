@@ -22,7 +22,7 @@ class McdYMcm : AppCompatActivity() {
 
         val btnCal = findViewById<Button>(R.id.btnCalcular)
 
-        val num1 = findViewById<EditText>(R.id.etNum1)
+        val num1 = findViewById<EditText>(R.id.etNum1a)
         val num2 = findViewById<EditText>(R.id.etNum2)
 
         var resul1 = findViewById<TextView>(R.id.textoResul1)
@@ -33,7 +33,7 @@ class McdYMcm : AppCompatActivity() {
         setSupportActionBar(toolbar)
         supportActionBar?.setDisplayHomeAsUpEnabled(true);
 
-        val navVista: NavigationView = findViewById(R.id.navVista)
+        val navVista: NavigationView = findViewById(R.id.navVistaMcm)
         val drawerLayout: DrawerLayout = findViewById(R.id.drawerLayoutMcm)
 
         toggle = ActionBarDrawerToggle(this, drawerLayout, R.string.open, R.string.close)
@@ -45,23 +45,30 @@ class McdYMcm : AppCompatActivity() {
         navVista.setNavigationItemSelectedListener {
             val intent = Intent(this, McdYMcm::class.java)
             val intent2 = Intent(this, MainActivity::class.java)
+            val intent3 = Intent(this, CalculadoraDeterminantes::class.java)
+
             when (it.itemId) {
-                R.id.miItem1 ->
+                R.id.miItem1 -> {
                     startActivity(intent2)
-                R.id.miItem1 -> Toast.makeText(
-                    applicationContext,
-                    "Clicked item1 ", Toast.LENGTH_SHORT
-                ).show()
-                R.id.miItem2 ->
+                    Toast.makeText(
+                        applicationContext,
+                        "Clicked item1 ", Toast.LENGTH_SHORT
+                    ).show()
+                }
+                R.id.miItem2 -> {
                     startActivity(intent)
-                R.id.miItem2 -> Toast.makeText(
-                    applicationContext,
-                    "Clicked item2 ", Toast.LENGTH_SHORT
-                ).show()
-                R.id.miItem3 -> Toast.makeText(
-                    applicationContext,
-                    "Clicked item3 ", Toast.LENGTH_SHORT
-                ).show()
+                    Toast.makeText(
+                        applicationContext,
+                        "Clicked item2 ", Toast.LENGTH_SHORT
+                    ).show()
+                }
+                R.id.miItem3 -> {
+                    startActivity(intent3)
+                    Toast.makeText(
+                        applicationContext,
+                        "Clicked item3 ", Toast.LENGTH_SHORT
+                    ).show()
+                }
             }
             true
         }

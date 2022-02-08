@@ -23,7 +23,7 @@
         android:id="@+id/flContent"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior" >>
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" >
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -41,7 +41,7 @@
                 android:textSize="20sp"
                 app:layout_constraintEnd_toStartOf="@+id/textoDescripcion6"
                 app:layout_constraintHorizontal_bias="0.452"
-                app:layout_constraintStart_toEndOf="@+id/etNum1"
+                app:layout_constraintStart_toEndOf="@+id/etNum1a"
                 app:layout_constraintTop_toBottomOf="@+id/textoDescripcion2" />
 
             <TextView
@@ -100,7 +100,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/cardView" />
 
             <EditText
-                android:id="@+id/etNum1"
+                android:id="@+id/etNum1a"
                 android:layout_width="109dp"
                 android:layout_height="51dp"
                 android:layout_marginStart="60dp"
@@ -127,7 +127,7 @@
                 android:textColor="@color/md_theme_dark_onBackground"
                 android:textColorHint="#FFFFFF"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/etNum1" />
+                app:layout_constraintTop_toBottomOf="@+id/etNum1a" />
 
             <Button
                 android:id="@+id/btnCalcular"
@@ -172,7 +172,7 @@
     </LinearLayout>
 
     <com.google.android.material.navigation.NavigationView
-        android:id="@+id/navVista"
+        android:id="@+id/navVistaMcm"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"

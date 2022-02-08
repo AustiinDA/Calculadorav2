@@ -20,6 +20,12 @@
         android:testOnly="true"
         android:theme="@style/Theme.Calculadora" >
         <activity
+            android:name="com.dam2.agus.calculadora.Determinantes3X3"
+            android:exported="false" />
+        <activity
+            android:name="com.dam2.agus.calculadora.Determinantes2X2"
+            android:exported="false" />
+        <activity
             android:name="com.dam2.agus.calculadora.CalculadoraDeterminantes"
             android:exported="false" />
         <activity

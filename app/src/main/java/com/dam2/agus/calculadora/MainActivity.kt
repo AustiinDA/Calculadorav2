@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(toolbar)
         supportActionBar?.setDisplayHomeAsUpEnabled(true);
 
-        val navVista: NavigationView = findViewById(R.id.navVista)
+        val navVista: NavigationView = findViewById(R.id.navVistaM)
         val drawerLayout: DrawerLayout = findViewById(R.id.drawerLayout)
 
         toggle = ActionBarDrawerToggle(this, drawerLayout, R.string.open, R.string.close)
@@ -44,21 +44,31 @@ class MainActivity : AppCompatActivity() {
 
         navVista.setNavigationItemSelectedListener {
             val intent = Intent(this, McdYMcm::class.java)
+            val intent2 = Intent(this, MainActivity::class.java)
+            val intent3 = Intent(this, Determinantes2X2::class.java)
+
             when (it.itemId) {
-                R.id.miItem1 -> Toast.makeText(
-                    applicationContext,
-                    "Clicked item1 ", Toast.LENGTH_SHORT
-                ).show()
-                R.id.miItem2 ->
+                R.id.miItem1 -> {
+                    startActivity(intent2)
+                    Toast.makeText(
+                        applicationContext,
+                        "Clicked item1 ", Toast.LENGTH_SHORT
+                    ).show()
+                }
+                R.id.miItem2 -> {
                     startActivity(intent)
-                R.id.miItem2 -> Toast.makeText(
-                    applicationContext,
-                    "Clicked item2 ", Toast.LENGTH_SHORT
-                ).show()
-                R.id.miItem3 -> Toast.makeText(
-                    applicationContext,
-                    "Clicked item3 ", Toast.LENGTH_SHORT
-                ).show()
+                    Toast.makeText(
+                        applicationContext,
+                        "Clicked item2 ", Toast.LENGTH_SHORT
+                    ).show()
+                }
+                R.id.miItem3 -> {
+                    startActivity(intent3)
+                    Toast.makeText(
+                        applicationContext,
+                        "Clicked item3 ", Toast.LENGTH_SHORT
+                    ).show()
+                }
             }
             true
         }
@@ -71,8 +81,8 @@ class MainActivity : AppCompatActivity() {
         return super.onOptionsItemSelected(item)
 
 
-    // val intent = Intent(this, mcd_mcm::class.java)
-       // startActivity(intent)
+        // val intent = Intent(this, mcd_mcm::class.java)
+        // startActivity(intent)
     }
 
 
