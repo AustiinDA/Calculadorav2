@@ -45,7 +45,7 @@ class MainActivity : AppCompatActivity() {
         navVista.setNavigationItemSelectedListener {
             val intent = Intent(this, McdYMcm::class.java)
             val intent2 = Intent(this, MainActivity::class.java)
-            val intent3 = Intent(this, Determinantes2X2::class.java)
+            val intent3 = Intent(this, CalculadoraDeterminantes::class.java)
 
             when (it.itemId) {
                 R.id.miItem1 -> {

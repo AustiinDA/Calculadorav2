@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
+import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
@@ -19,6 +20,8 @@ class CalculadoraDeterminantes : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_calculadora_determinantes)
 
+        val btnMenu2x2 = findViewById<Button>(R.id.btnMenu2x2)
+        val btnMenu3x3 = findViewById<Button>(R.id.btnMenu3x3)
 
         val toolbar: Toolbar = findViewById(R.id.toolbar);
 
@@ -65,6 +68,16 @@ class CalculadoraDeterminantes : AppCompatActivity() {
             true
         }
 
+        btnMenu2x2.setOnClickListener{
+            val intent = Intent(this, Determinantes2X2::class.java)
+            startActivity(intent)
+        }
+
+        btnMenu3x3.setOnClickListener{
+            val intent2 = Intent(this, Determinantes3X3::class.java)
+            startActivity(intent2)
+        }
+
 
     }
 
@@ -74,8 +87,7 @@ class CalculadoraDeterminantes : AppCompatActivity() {
         return super.onOptionsItemSelected(item)
     }
 
-    fun operacion2x2(num1:Int, num2:Int, num3:Int, num4:Int){
 
-    }
+
 
 }

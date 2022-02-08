@@ -4,7 +4,7 @@
             "outputFile": "C:\\Users\\2diag\\AndroidStudioProjects\\Calculadorav2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w320dp-land-v13\\values-w320dp-land-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\2diag\\.gradle\\caches\\transforms-3\\216a0e55c362014aa07b738a23943960\\transformed\\material-1.6.0-alpha02\\res\\values-w320dp-land-v13\\values-w320dp-land-v13.xml",
+                    "source": "C:\\Users\\2diag\\.gradle\\caches\\transforms-3\\f5432cf670935f49959dbd5f25371e00\\transformed\\material-1.6.0-alpha02\\res\\values-w320dp-land-v13\\values-w320dp-land-v13.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

@@ -22,7 +22,7 @@ class McdYMcm : AppCompatActivity() {
 
         val btnCal = findViewById<Button>(R.id.btnCalcular)
 
-        val num1 = findViewById<EditText>(R.id.etNum1a)
+        val num1 = findViewById<EditText>(R.id.etNumA11)
         val num2 = findViewById<EditText>(R.id.etNum2)
 
         var resul1 = findViewById<TextView>(R.id.textoResul1)
