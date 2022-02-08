@@ -44,6 +44,7 @@ class MainActivity : AppCompatActivity() {
 
         navVista.setNavigationItemSelectedListener {
             val intent = Intent(this, McdYMcm::class.java)
+            val intent3 = Intent(this, CalculadoraDeterminantes::class.java)
             when (it.itemId) {
                 R.id.miItem1 -> Toast.makeText(
                     applicationContext,
@@ -55,10 +56,12 @@ class MainActivity : AppCompatActivity() {
                     applicationContext,
                     "Clicked item2 ", Toast.LENGTH_SHORT
                 ).show()
-                R.id.miItem3 -> Toast.makeText(
+                R.id.miItem3 -> {
+                    startActivity(intent3)
+                    Toast.makeText(
                     applicationContext,
                     "Clicked item3 ", Toast.LENGTH_SHORT
-                ).show()
+                ).show()}
             }
             true
         }
