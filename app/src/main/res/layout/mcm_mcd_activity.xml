@@ -11,148 +11,149 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-    <!-- The ActionBar displayed at the top -->
+        <!-- The ActionBar displayed at the top -->
 
-    <include
-        layout="@layout/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        <include
+            layout="@layout/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
-    <!-- The main content view where fragments are loaded -->
-    <FrameLayout
-        android:id="@+id/flContent"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior" >
-        <androidx.constraintlayout.widget.ConstraintLayout
+        <!-- The main content view where fragments are loaded -->
+        <FrameLayout
+            android:id="@+id/flContent"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/md_theme_light_inverseSurface"
-            tools:context=".McdYMcm">
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/md_theme_light_inverseSurface"
+                tools:context=".McdYMcm">
 
 
-            <TextView
-                android:id="@+id/textoResul2"
-                android:layout_width="140dp"
-                android:layout_height="50dp"
-                android:layout_marginEnd="40dp"
-                android:textAlignment="center"
-                android:textColor="#F07C18"
-                android:textSize="20sp"
-                app:layout_constraintBottom_toTopOf="@+id/textoResul1"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/etNumA11"
-                app:layout_constraintVertical_bias="0.0" />
+                <TextView
+                    android:id="@+id/textoResul2"
+                    android:layout_width="140dp"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="40dp"
+                    android:textAlignment="center"
+                    android:textColor="#F07C18"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toTopOf="@+id/textoResul1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/edtA1"
+                    app:layout_constraintVertical_bias="0.0" />
 
-            <TextView
-                android:id="@+id/textoResul1"
-                android:layout_width="140dp"
-                android:layout_height="50dp"
-                android:layout_marginEnd="40dp"
-                android:layout_marginBottom="36dp"
-                android:textAlignment="center"
-                android:textColor="#F07C18"
-                android:textSize="20sp"
-                app:layout_constraintBottom_toTopOf="@+id/btnCalcular"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/etNum2"
-                app:layout_constraintVertical_bias="0.0" />
+                <TextView
+                    android:id="@+id/textoResul1"
+                    android:layout_width="140dp"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginBottom="36dp"
+                    android:textAlignment="center"
+                    android:textColor="#F07C18"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toTopOf="@+id/btnCalcular"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/etNum2"
+                    app:layout_constraintVertical_bias="0.0" />
 
-            <TextView
-                android:id="@+id/textoDescripcion6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="12dp"
-                android:layout_marginTop="116dp"
-                android:text="MCM"
-                android:textAlignment="center"
-                android:textColor="@color/md_theme_dark_onBackground"
-                android:textSize="20sp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                <TextView
+                    android:id="@+id/textoDescripcion6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="116dp"
+                    android:text="MCM"
+                    android:textAlignment="center"
+                    android:textColor="@color/md_theme_dark_onBackground"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-            <TextView
-                android:id="@+id/textoDescripcion5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="88dp"
-                android:text="MCD"
-                android:textAlignment="center"
-                android:textColor="@color/md_theme_dark_onBackground"
-                android:textSize="20sp"
-                app:layout_constraintBottom_toTopOf="@+id/btnCalcular"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.737" />
+                <TextView
+                    android:id="@+id/textoDescripcion5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="88dp"
+                    android:text="MCD"
+                    android:textAlignment="center"
+                    android:textColor="@color/md_theme_dark_onBackground"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toTopOf="@+id/btnCalcular"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.737" />
 
-            <TextView
-                android:id="@+id/textoDescripcion2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Introduce dos números: "
-                android:textAlignment="center"
-                android:textColor="@color/md_theme_dark_onBackground"
-                android:textSize="20sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.497"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.025" />
+                <TextView
+                    android:id="@+id/textoDescripcion2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Introduce dos números: "
+                    android:textAlignment="center"
+                    android:textColor="@color/md_theme_dark_onBackground"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.497"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.025" />
 
-            <EditText
-                android:id="@+id/etNumA11"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                android:layout_width="140dp"
-                android:layout_height="50dp"
-                android:layout_marginTop="60dp"
-                android:ems="10"
-                android:gravity="center"
-                android:hint="Número 1"
-                android:inputType="textPersonName"
-                android:textColor="@color/md_theme_dark_onBackground"
-                android:textColorHint="#FFFFFF"
-                android:textSize="20sp"
-                app:layout_constraintEnd_toStartOf="@+id/textoResul2"
-                app:layout_constraintHorizontal_bias="0.516"
-                app:layout_constraintStart_toEndOf="@+id/textoDescripcion6"
-                app:layout_constraintTop_toBottomOf="@+id/textoDescripcion2" />
+                <EditText
+                    android:id="@+id/edtA1"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="140dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="60dp"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="Número 1"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/md_theme_dark_onBackground"
+                    android:textColorHint="#FFFFFF"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toStartOf="@+id/textoResul2"
+                    app:layout_constraintHorizontal_bias="0.516"
+                    app:layout_constraintStart_toEndOf="@+id/textoDescripcion6"
+                    app:layout_constraintTop_toBottomOf="@+id/textoDescripcion2" />
 
-            <EditText
-                android:id="@+id/etNum2"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                android:layout_width="140dp"
-                android:layout_height="50dp"
-                android:ems="10"
-                android:gravity="center"
-                android:hint="Número 2"
-                android:inputType="textPersonName"
-                android:textColor="@color/md_theme_dark_onBackground"
-                android:textColorHint="#FFFFFF"
-                android:textSize="20sp"
-                app:layout_constraintBottom_toTopOf="@+id/btnCalcular"
-                app:layout_constraintEnd_toStartOf="@+id/textoResul1"
-                app:layout_constraintStart_toEndOf="@+id/textoDescripcion5"
-                app:layout_constraintTop_toBottomOf="@+id/etNumA11"
-                app:layout_constraintVertical_bias="0.636" />
+                <EditText
+                    android:id="@+id/etNum2"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="140dp"
+                    android:layout_height="50dp"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="Número 2"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/md_theme_dark_onBackground"
+                    android:textColorHint="#FFFFFF"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toTopOf="@+id/btnCalcular"
+                    app:layout_constraintEnd_toStartOf="@+id/textoResul1"
+                    app:layout_constraintStart_toEndOf="@+id/textoDescripcion5"
+                    app:layout_constraintTop_toBottomOf="@+id/edtA1"
+                    app:layout_constraintVertical_bias="0.636" />
 
-            <Button
-                android:id="@+id/btnCalcular"
-                style="@style/Widget.Material3.Button.Icon"
-                android:layout_width="302dp"
-                android:layout_height="63dp"
-                android:text="CALCULAR"
-                android:textColor="@color/md_theme_dark_onBackground"
-                android:textSize="20sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.559"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                <Button
+                    android:id="@+id/btnCalcular"
+                    style="@style/Widget.Material3.Button.Icon"
+                    android:layout_width="302dp"
+                    android:layout_height="63dp"
+                    android:text="CALCULAR"
+                    android:textColor="@color/md_theme_dark_onBackground"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.559"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
-    </FrameLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </FrameLayout>
 
     </LinearLayout>
 

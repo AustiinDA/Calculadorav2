@@ -1,7 +1,6 @@
 package com.dam2.agus.calculadora
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
 import android.widget.Button
@@ -9,6 +8,7 @@ import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.drawerlayout.widget.DrawerLayout
 import com.google.android.material.navigation.NavigationView
@@ -22,7 +22,7 @@ class McdYMcm : AppCompatActivity() {
 
         val btnCal = findViewById<Button>(R.id.btnCalcular)
 
-        val num1 = findViewById<EditText>(R.id.etNumA11)
+        val num1 = findViewById<EditText>(R.id.edtA1)
         val num2 = findViewById<EditText>(R.id.etNum2)
 
         var resul1 = findViewById<TextView>(R.id.textoResul1)
@@ -46,27 +46,34 @@ class McdYMcm : AppCompatActivity() {
             val intent = Intent(this, McdYMcm::class.java)
             val intent2 = Intent(this, MainActivity::class.java)
             val intent3 = Intent(this, CalculadoraDeterminantes::class.java)
-
+            val intent4 = Intent(this, CramerMenu::class.java)
             when (it.itemId) {
                 R.id.miItem1 -> {
                     startActivity(intent2)
                     Toast.makeText(
                         applicationContext,
-                        "Clicked item1 ", Toast.LENGTH_SHORT
+                        "Calculadora", Toast.LENGTH_SHORT
                     ).show()
                 }
                 R.id.miItem2 -> {
                     startActivity(intent)
                     Toast.makeText(
                         applicationContext,
-                        "Clicked item2 ", Toast.LENGTH_SHORT
+                        "MCM y MCD", Toast.LENGTH_SHORT
                     ).show()
                 }
                 R.id.miItem3 -> {
                     startActivity(intent3)
                     Toast.makeText(
                         applicationContext,
-                        "Clicked item3 ", Toast.LENGTH_SHORT
+                        "Determinantes", Toast.LENGTH_SHORT
+                    ).show()
+                }
+                R.id.miItem4 -> {
+                    startActivity(intent4)
+                    Toast.makeText(
+                        applicationContext,
+                        "Regla de Cramer", Toast.LENGTH_SHORT
                     ).show()
                 }
             }

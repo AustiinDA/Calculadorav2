@@ -4,6 +4,10 @@
         "source": "C:\\Users\\2diag\\AndroidStudioProjects\\Calculadorav2\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.webp"
     },
     {
+        "merged": "C:\\Users\\2diag\\AndroidStudioProjects\\Calculadorav2\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_cramer_menu.xml.flat",
+        "source": "C:\\Users\\2diag\\AndroidStudioProjects\\Calculadorav2\\app\\src\\main\\res\\layout\\activity_cramer_menu.xml"
+    },
+    {
         "merged": "C:\\Users\\2diag\\AndroidStudioProjects\\Calculadorav2\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\2diag\\AndroidStudioProjects\\Calculadorav2\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
@@ -16,8 +20,8 @@
         "source": "C:\\Users\\2diag\\AndroidStudioProjects\\Calculadorav2\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "C:\\Users\\2diag\\AndroidStudioProjects\\Calculadorav2\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_determinantes3_x3.xml.flat",
-        "source": "C:\\Users\\2diag\\AndroidStudioProjects\\Calculadorav2\\app\\src\\main\\res\\layout\\activity_determinantes3_x3.xml"
+        "merged": "C:\\Users\\2diag\\AndroidStudioProjects\\Calculadorav2\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_cramer2x2.xml.flat",
+        "source": "C:\\Users\\2diag\\AndroidStudioProjects\\Calculadorav2\\app\\src\\main\\res\\layout\\activity_cramer2x2.xml"
     },
     {
         "merged": "C:\\Users\\2diag\\AndroidStudioProjects\\Calculadorav2\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher.webp.flat",
@@ -38,6 +42,10 @@
     {
         "merged": "C:\\Users\\2diag\\AndroidStudioProjects\\Calculadorav2\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_launcher_background.xml.flat",
         "source": "C:\\Users\\2diag\\AndroidStudioProjects\\Calculadorav2\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\2diag\\AndroidStudioProjects\\Calculadorav2\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_determinantes3x3.xml.flat",
+        "source": "C:\\Users\\2diag\\AndroidStudioProjects\\Calculadorav2\\app\\src\\main\\res\\layout\\activity_determinantes3x3.xml"
     },
     {
         "merged": "C:\\Users\\2diag\\AndroidStudioProjects\\Calculadorav2\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher.webp.flat",
@@ -110,6 +118,10 @@
     {
         "merged": "C:\\Users\\2diag\\AndroidStudioProjects\\Calculadorav2\\app\\build\\intermediates\\merged_res\\debug\\layout_calculadora_det_2x2.xml.flat",
         "source": "C:\\Users\\2diag\\AndroidStudioProjects\\Calculadorav2\\app\\src\\main\\res\\layout\\calculadora_det_2x2.xml"
+    },
+    {
+        "merged": "C:\\Users\\2diag\\AndroidStudioProjects\\Calculadorav2\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_cramer3x3.xml.flat",
+        "source": "C:\\Users\\2diag\\AndroidStudioProjects\\Calculadorav2\\app\\src\\main\\res\\layout\\activity_cramer3x3.xml"
     },
     {
         "merged": "C:\\Users\\2diag\\AndroidStudioProjects\\Calculadorav2\\app\\build\\intermediates\\merged_res\\debug\\drawable_dw_pantalla.xml.flat",

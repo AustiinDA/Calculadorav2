@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Calculadora">
         <activity
+            android:name=".Cramer3x3"
+            android:exported="false" />
+        <activity
+            android:name=".CramerMenu"
+            android:exported="false" />
+        <activity
+            android:name=".Cramer2x2"
+            android:exported="false" />
+        <activity
             android:name=".Determinantes3X3"
             android:exported="false" />
         <activity

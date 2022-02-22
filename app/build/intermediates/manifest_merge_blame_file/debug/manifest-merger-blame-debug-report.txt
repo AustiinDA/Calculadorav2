@@ -11,7 +11,7 @@
 9-->C:\Users\2diag\AndroidStudioProjects\Calculadorav2\app\src\main\AndroidManifest.xml
 10
 11    <application
-11-->C:\Users\2diag\AndroidStudioProjects\Calculadorav2\app\src\main\AndroidManifest.xml:5:5-33:19
+11-->C:\Users\2diag\AndroidStudioProjects\Calculadorav2\app\src\main\AndroidManifest.xml:5:5-42:19
 12        android:allowBackup="true"
 12-->C:\Users\2diag\AndroidStudioProjects\Calculadorav2\app\src\main\AndroidManifest.xml:6:9-35
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -31,67 +31,85 @@
 21-->C:\Users\2diag\AndroidStudioProjects\Calculadorav2\app\src\main\AndroidManifest.xml:11:9-49
 22        <activity
 22-->C:\Users\2diag\AndroidStudioProjects\Calculadorav2\app\src\main\AndroidManifest.xml:12:9-14:40
-23            android:name="com.dam2.agus.calculadora.Determinantes3X3"
-23-->C:\Users\2diag\AndroidStudioProjects\Calculadorav2\app\src\main\AndroidManifest.xml:13:13-45
+23            android:name="com.dam2.agus.calculadora.Cramer3x3"
+23-->C:\Users\2diag\AndroidStudioProjects\Calculadorav2\app\src\main\AndroidManifest.xml:13:13-38
 24            android:exported="false" />
 24-->C:\Users\2diag\AndroidStudioProjects\Calculadorav2\app\src\main\AndroidManifest.xml:14:13-37
 25        <activity
 25-->C:\Users\2diag\AndroidStudioProjects\Calculadorav2\app\src\main\AndroidManifest.xml:15:9-17:40
-26            android:name="com.dam2.agus.calculadora.Determinantes2X2"
-26-->C:\Users\2diag\AndroidStudioProjects\Calculadorav2\app\src\main\AndroidManifest.xml:16:13-45
+26            android:name="com.dam2.agus.calculadora.CramerMenu"
+26-->C:\Users\2diag\AndroidStudioProjects\Calculadorav2\app\src\main\AndroidManifest.xml:16:13-39
 27            android:exported="false" />
 27-->C:\Users\2diag\AndroidStudioProjects\Calculadorav2\app\src\main\AndroidManifest.xml:17:13-37
 28        <activity
 28-->C:\Users\2diag\AndroidStudioProjects\Calculadorav2\app\src\main\AndroidManifest.xml:18:9-20:40
-29            android:name="com.dam2.agus.calculadora.CalculadoraDeterminantes"
-29-->C:\Users\2diag\AndroidStudioProjects\Calculadorav2\app\src\main\AndroidManifest.xml:19:13-53
+29            android:name="com.dam2.agus.calculadora.Cramer2x2"
+29-->C:\Users\2diag\AndroidStudioProjects\Calculadorav2\app\src\main\AndroidManifest.xml:19:13-38
 30            android:exported="false" />
 30-->C:\Users\2diag\AndroidStudioProjects\Calculadorav2\app\src\main\AndroidManifest.xml:20:13-37
 31        <activity
 31-->C:\Users\2diag\AndroidStudioProjects\Calculadorav2\app\src\main\AndroidManifest.xml:21:9-23:40
-32            android:name="com.dam2.agus.calculadora.McdYMcm"
-32-->C:\Users\2diag\AndroidStudioProjects\Calculadorav2\app\src\main\AndroidManifest.xml:22:13-36
+32            android:name="com.dam2.agus.calculadora.Determinantes3X3"
+32-->C:\Users\2diag\AndroidStudioProjects\Calculadorav2\app\src\main\AndroidManifest.xml:22:13-45
 33            android:exported="false" />
 33-->C:\Users\2diag\AndroidStudioProjects\Calculadorav2\app\src\main\AndroidManifest.xml:23:13-37
 34        <activity
-34-->C:\Users\2diag\AndroidStudioProjects\Calculadorav2\app\src\main\AndroidManifest.xml:24:9-32:20
-35            android:name="com.dam2.agus.calculadora.MainActivity"
-35-->C:\Users\2diag\AndroidStudioProjects\Calculadorav2\app\src\main\AndroidManifest.xml:25:13-41
-36            android:exported="true" >
-36-->C:\Users\2diag\AndroidStudioProjects\Calculadorav2\app\src\main\AndroidManifest.xml:26:13-36
-37            <intent-filter>
-37-->C:\Users\2diag\AndroidStudioProjects\Calculadorav2\app\src\main\AndroidManifest.xml:27:13-31:29
-38                <action android:name="android.intent.action.MAIN" />
-38-->C:\Users\2diag\AndroidStudioProjects\Calculadorav2\app\src\main\AndroidManifest.xml:28:17-69
-38-->C:\Users\2diag\AndroidStudioProjects\Calculadorav2\app\src\main\AndroidManifest.xml:28:25-66
-39
-40                <category android:name="android.intent.category.LAUNCHER" />
-40-->C:\Users\2diag\AndroidStudioProjects\Calculadorav2\app\src\main\AndroidManifest.xml:30:17-77
-40-->C:\Users\2diag\AndroidStudioProjects\Calculadorav2\app\src\main\AndroidManifest.xml:30:27-74
-41            </intent-filter>
-42        </activity>
-43
-44        <provider
-44-->[androidx.emoji2:emoji2:1.0.0] C:\Users\2diag\.gradle\caches\transforms-3\d50df43264f7ace3bce4fd798130937b\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
-45            android:name="androidx.startup.InitializationProvider"
-45-->[androidx.emoji2:emoji2:1.0.0] C:\Users\2diag\.gradle\caches\transforms-3\d50df43264f7ace3bce4fd798130937b\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
-46            android:authorities="com.dam2.agus.calculadora.androidx-startup"
-46-->[androidx.emoji2:emoji2:1.0.0] C:\Users\2diag\.gradle\caches\transforms-3\d50df43264f7ace3bce4fd798130937b\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
-47            android:exported="false" >
-47-->[androidx.emoji2:emoji2:1.0.0] C:\Users\2diag\.gradle\caches\transforms-3\d50df43264f7ace3bce4fd798130937b\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
-48            <meta-data
-48-->[androidx.emoji2:emoji2:1.0.0] C:\Users\2diag\.gradle\caches\transforms-3\d50df43264f7ace3bce4fd798130937b\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
-49                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-49-->[androidx.emoji2:emoji2:1.0.0] C:\Users\2diag\.gradle\caches\transforms-3\d50df43264f7ace3bce4fd798130937b\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
-50                android:value="androidx.startup" />
-50-->[androidx.emoji2:emoji2:1.0.0] C:\Users\2diag\.gradle\caches\transforms-3\d50df43264f7ace3bce4fd798130937b\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
-51            <meta-data
-51-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\2diag\.gradle\caches\transforms-3\898fc256cac68fc2603385ae81c889cd\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
-52                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-52-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\2diag\.gradle\caches\transforms-3\898fc256cac68fc2603385ae81c889cd\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
-53                android:value="androidx.startup" />
-53-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\2diag\.gradle\caches\transforms-3\898fc256cac68fc2603385ae81c889cd\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
-54        </provider>
-55    </application>
-56
-57</manifest>
+34-->C:\Users\2diag\AndroidStudioProjects\Calculadorav2\app\src\main\AndroidManifest.xml:24:9-26:40
+35            android:name="com.dam2.agus.calculadora.Determinantes2X2"
+35-->C:\Users\2diag\AndroidStudioProjects\Calculadorav2\app\src\main\AndroidManifest.xml:25:13-45
+36            android:exported="false" />
+36-->C:\Users\2diag\AndroidStudioProjects\Calculadorav2\app\src\main\AndroidManifest.xml:26:13-37
+37        <activity
+37-->C:\Users\2diag\AndroidStudioProjects\Calculadorav2\app\src\main\AndroidManifest.xml:27:9-29:40
+38            android:name="com.dam2.agus.calculadora.CalculadoraDeterminantes"
+38-->C:\Users\2diag\AndroidStudioProjects\Calculadorav2\app\src\main\AndroidManifest.xml:28:13-53
+39            android:exported="false" />
+39-->C:\Users\2diag\AndroidStudioProjects\Calculadorav2\app\src\main\AndroidManifest.xml:29:13-37
+40        <activity
+40-->C:\Users\2diag\AndroidStudioProjects\Calculadorav2\app\src\main\AndroidManifest.xml:30:9-32:40
+41            android:name="com.dam2.agus.calculadora.McdYMcm"
+41-->C:\Users\2diag\AndroidStudioProjects\Calculadorav2\app\src\main\AndroidManifest.xml:31:13-36
+42            android:exported="false" />
+42-->C:\Users\2diag\AndroidStudioProjects\Calculadorav2\app\src\main\AndroidManifest.xml:32:13-37
+43        <activity
+43-->C:\Users\2diag\AndroidStudioProjects\Calculadorav2\app\src\main\AndroidManifest.xml:33:9-41:20
+44            android:name="com.dam2.agus.calculadora.MainActivity"
+44-->C:\Users\2diag\AndroidStudioProjects\Calculadorav2\app\src\main\AndroidManifest.xml:34:13-41
+45            android:exported="true" >
+45-->C:\Users\2diag\AndroidStudioProjects\Calculadorav2\app\src\main\AndroidManifest.xml:35:13-36
+46            <intent-filter>
+46-->C:\Users\2diag\AndroidStudioProjects\Calculadorav2\app\src\main\AndroidManifest.xml:36:13-40:29
+47                <action android:name="android.intent.action.MAIN" />
+47-->C:\Users\2diag\AndroidStudioProjects\Calculadorav2\app\src\main\AndroidManifest.xml:37:17-69
+47-->C:\Users\2diag\AndroidStudioProjects\Calculadorav2\app\src\main\AndroidManifest.xml:37:25-66
+48
+49                <category android:name="android.intent.category.LAUNCHER" />
+49-->C:\Users\2diag\AndroidStudioProjects\Calculadorav2\app\src\main\AndroidManifest.xml:39:17-77
+49-->C:\Users\2diag\AndroidStudioProjects\Calculadorav2\app\src\main\AndroidManifest.xml:39:27-74
+50            </intent-filter>
+51        </activity>
+52
+53        <provider
+53-->[androidx.emoji2:emoji2:1.0.0] C:\Users\2diag\.gradle\caches\transforms-3\d50df43264f7ace3bce4fd798130937b\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+54            android:name="androidx.startup.InitializationProvider"
+54-->[androidx.emoji2:emoji2:1.0.0] C:\Users\2diag\.gradle\caches\transforms-3\d50df43264f7ace3bce4fd798130937b\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
+55            android:authorities="com.dam2.agus.calculadora.androidx-startup"
+55-->[androidx.emoji2:emoji2:1.0.0] C:\Users\2diag\.gradle\caches\transforms-3\d50df43264f7ace3bce4fd798130937b\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
+56            android:exported="false" >
+56-->[androidx.emoji2:emoji2:1.0.0] C:\Users\2diag\.gradle\caches\transforms-3\d50df43264f7ace3bce4fd798130937b\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
+57            <meta-data
+57-->[androidx.emoji2:emoji2:1.0.0] C:\Users\2diag\.gradle\caches\transforms-3\d50df43264f7ace3bce4fd798130937b\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+58                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+58-->[androidx.emoji2:emoji2:1.0.0] C:\Users\2diag\.gradle\caches\transforms-3\d50df43264f7ace3bce4fd798130937b\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
+59                android:value="androidx.startup" />
+59-->[androidx.emoji2:emoji2:1.0.0] C:\Users\2diag\.gradle\caches\transforms-3\d50df43264f7ace3bce4fd798130937b\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
+60            <meta-data
+60-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\2diag\.gradle\caches\transforms-3\898fc256cac68fc2603385ae81c889cd\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+61                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+61-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\2diag\.gradle\caches\transforms-3\898fc256cac68fc2603385ae81c889cd\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+62                android:value="androidx.startup" />
+62-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\2diag\.gradle\caches\transforms-3\898fc256cac68fc2603385ae81c889cd\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+63        </provider>
+64    </application>
+65
+66</manifest>

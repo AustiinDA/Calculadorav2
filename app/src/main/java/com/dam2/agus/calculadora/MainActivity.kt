@@ -1,13 +1,13 @@
 package com.dam2.agus.calculadora
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
 import android.view.View
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.drawerlayout.widget.DrawerLayout
 import com.google.android.material.navigation.NavigationView
@@ -46,27 +46,34 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, McdYMcm::class.java)
             val intent2 = Intent(this, MainActivity::class.java)
             val intent3 = Intent(this, CalculadoraDeterminantes::class.java)
-
+            val intent4 = Intent(this, CramerMenu::class.java)
             when (it.itemId) {
                 R.id.miItem1 -> {
                     startActivity(intent2)
                     Toast.makeText(
                         applicationContext,
-                        "Clicked item1 ", Toast.LENGTH_SHORT
+                        "Calculadora", Toast.LENGTH_SHORT
                     ).show()
                 }
                 R.id.miItem2 -> {
                     startActivity(intent)
                     Toast.makeText(
                         applicationContext,
-                        "Clicked item2 ", Toast.LENGTH_SHORT
+                        "MCM y MCD", Toast.LENGTH_SHORT
                     ).show()
                 }
                 R.id.miItem3 -> {
                     startActivity(intent3)
                     Toast.makeText(
                         applicationContext,
-                        "Clicked item3 ", Toast.LENGTH_SHORT
+                        "Determinantes", Toast.LENGTH_SHORT
+                    ).show()
+                }
+                R.id.miItem4 -> {
+                    startActivity(intent4)
+                    Toast.makeText(
+                        applicationContext,
+                        "Regla de Cramer", Toast.LENGTH_SHORT
                     ).show()
                 }
             }

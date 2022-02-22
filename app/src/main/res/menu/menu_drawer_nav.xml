@@ -4,17 +4,20 @@
         <item
             android:id="@+id/miItem1"
             android:icon="@drawable/ic_baseline_calculate_24"
-            android:title="Calculadora estándar" />
+            android:title="Calculadora" />
 
         <item
             android:id="@+id/miItem2"
             android:icon="@drawable/ic_baseline_input_24"
-            android:title="Calculadora de MCM y MCD" />
+            android:title="MCM y MCD" />
         <item
             android:id="@+id/miItem3"
             android:icon="@drawable/ic_baseline_grid_on_24"
             android:title="Ecuaciones" />
-
+        <item
+            android:id="@+id/miItem4"
+            android:icon="@drawable/ic_baseline_grid_on_24"
+            android:title="Regla de Cramer" />
     </group>
 
 </menu>

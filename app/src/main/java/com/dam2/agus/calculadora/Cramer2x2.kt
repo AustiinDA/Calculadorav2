@@ -13,14 +13,14 @@ import androidx.appcompat.widget.Toolbar
 import androidx.drawerlayout.widget.DrawerLayout
 import com.google.android.material.navigation.NavigationView
 
-class Determinantes3X3 : AppCompatActivity() {
+class Cramer2x2 : AppCompatActivity() {
 
     lateinit var toggle: ActionBarDrawerToggle
     lateinit var navVista: NavigationView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_determinantes3x3)
+        setContentView(R.layout.activity_cramer2x2)
 
         val toolbar: Toolbar = findViewById(R.id.toolbar);
 
@@ -28,7 +28,7 @@ class Determinantes3X3 : AppCompatActivity() {
         supportActionBar?.setDisplayHomeAsUpEnabled(true);
 
         val navVista: NavigationView = findViewById(R.id.navVistaC)
-        val drawerLayout: DrawerLayout = findViewById(R.id.drawerLayoutDeterminantes3x3)
+        val drawerLayout: DrawerLayout = findViewById(R.id.drawerLayoutCramer2x2)
 
         toggle = ActionBarDrawerToggle(this, drawerLayout, R.string.open, R.string.close)
 
@@ -73,57 +73,60 @@ class Determinantes3X3 : AppCompatActivity() {
             }
             true
         }
-        val btnCalDeterminante = findViewById<Button>(R.id.btnMenu3x3)
-        val numa11 = findViewById<EditText>(R.id.edtA1)
-        val numa12 = findViewById<EditText>(R.id.edtY1)
-        val numa13 = findViewById<EditText>(R.id.etNumA13)
-        val numa21 = findViewById<EditText>(R.id.etA3)
-        val numa22 = findViewById<EditText>(R.id.etY3)
-        val numa23 = findViewById<EditText>(R.id.etNumA23)
-        val numa31 = findViewById<EditText>(R.id.etNumA31)
-        val numa32 = findViewById<EditText>(R.id.etNumA32)
-        val numa33 = findViewById<EditText>(R.id.etNumA33)
 
-        val resultadoText = findViewById<TextView>(R.id.tv_resulX)
+        val btnCalDeterminante = findViewById<Button>(R.id.btnMenu2x2)
+        val num1 = findViewById<EditText>(R.id.edtA1)
+        val num2 = findViewById<EditText>(R.id.edtY1)
+        val num3 = findViewById<EditText>(R.id.etA3)
+        val num4 = findViewById<EditText>(R.id.etY3)
 
-        fun calcularDet(
-            num11: Int,
-            num12: Int,
-            num13: Int,
-            num21: Int,
-            num22: Int,
-            num23: Int,
-            num31: Int,
-            num32: Int,
-            num33: Int
-        ) {
-            var resultado: Int = 0
+        val termI1 = findViewById<EditText>(R.id.EtC1)
+        val termI2 = findViewById<EditText>(R.id.EtC2)
+        val resultadoIgX = findViewById<TextView>(R.id.tv_resulX)
+        val resultadoIgY = findViewById<TextView>(R.id.tv_resulY)
 
-            resultado =
-                num11 * num22 * num33 + num12 * num23 * num31 + num21 * num32 * num13 - num31 * num22 * num13 - num32 * num23 * num11 - num21 * num12 * num33
 
-            resultadoText.text = resultado.toString()
+        fun calcularIncog(num1: Int, num2: Int, num3: Int, num4: Int, termI1: Int, termI2: Int) {
+            var detX: Int = 0
+            var detY: Int = 0
+            var detS: Int = 0
+            //Calculo de los determinantes
+            detS = num1 * num4 - num3 * num2
+            detX = termI1 * num4 - num2 * termI2
+            detY = num1 * termI2 - num3 * termI1
 
-            //resultadoText.text = resultado.toString()
+            var resultadoX: Int = 0
+            var resultadoY: Int = 0
+            //Calculo de las incognitas
+            resultadoX = detX / detS
+            resultadoY = detY / detS
+
+            resultadoIgX.text = resultadoX.toString()
+            resultadoIgY.text = resultadoY.toString()
         }
-
-
 
         btnCalDeterminante.setOnClickListener {
-            val valor1 = numa11.text.toString().toInt()
-            val valor2 = numa12.text.toString().toInt()
-            val valor3 = numa13.text.toString().toInt()
-            val valor4 = numa21.text.toString().toInt()
-            val valor5 = numa22.text.toString().toInt()
-            val valor6 = numa23.text.toString().toInt()
-            val valor7 = numa31.text.toString().toInt()
-            val valor8 = numa32.text.toString().toInt()
-            val valor9 = numa33.text.toString().toInt()
+            val valor1 = num1.text.toString().toInt()
+            val valor2 = num2.text.toString().toInt()
+            val valor3 = num3.text.toString().toInt()
+            val valor4 = num4.text.toString().toInt()
+            val deter1 = termI1.text.toString().toInt()
+            val deter2 = termI2.text.toString().toInt()
+            calcularIncog(valor1, valor2, valor3, valor4, deter1, deter2)
 
-            calcularDet(valor1, valor2, valor3, valor4, valor5, valor6, valor7, valor8, valor9)
+         /*   if (valor1.toString().isEmpty()){
+                    Toast.makeText(baseContext, "No has introducido valores", Toast.LENGTH_SHORT).show();
+            }else if (valor2.toString().isEmpty()){
+                    Toast.makeText(baseContext, "No has introducido valores", Toast.LENGTH_SHORT).show();
+            }else if (valor3.toString().isEmpty()){
+                    Toast.makeText(baseContext, "No has introducido valores", Toast.LENGTH_SHORT).show();
+            }else if (valor4.toString().isEmpty()){
+                    Toast.makeText(baseContext, "No has introducido valores", Toast.LENGTH_SHORT).show();
+            }else{
+            }
+*/
         }
     }
-
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         if (toggle.onOptionsItemSelected(item))
             true

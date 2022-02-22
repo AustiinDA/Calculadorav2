@@ -1,7 +1,6 @@
 package com.dam2.agus.calculadora
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
 import android.widget.Button
@@ -9,6 +8,7 @@ import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.drawerlayout.widget.DrawerLayout
 import com.google.android.material.navigation.NavigationView
@@ -26,7 +26,7 @@ class Determinantes2X2 : AppCompatActivity() {
         setSupportActionBar(toolbar)
         supportActionBar?.setDisplayHomeAsUpEnabled(true);
 
-        val navVista: NavigationView = findViewById(R.id.navVistaD)
+        val navVista: NavigationView = findViewById(R.id.navVistaC)
         val drawerLayout: DrawerLayout = findViewById(R.id.drawerLayoutDeterminantes2x2)
 
         toggle = ActionBarDrawerToggle(this, drawerLayout, R.string.open, R.string.close)
@@ -39,27 +39,34 @@ class Determinantes2X2 : AppCompatActivity() {
             val intent = Intent(this, McdYMcm::class.java)
             val intent2 = Intent(this, MainActivity::class.java)
             val intent3 = Intent(this, CalculadoraDeterminantes::class.java)
-
+            val intent4 = Intent(this, CramerMenu::class.java)
             when (it.itemId) {
                 R.id.miItem1 -> {
                     startActivity(intent2)
                     Toast.makeText(
                         applicationContext,
-                        "Clicked item1 ", Toast.LENGTH_SHORT
+                        "Calculadora", Toast.LENGTH_SHORT
                     ).show()
                 }
                 R.id.miItem2 -> {
                     startActivity(intent)
                     Toast.makeText(
                         applicationContext,
-                        "Clicked item2 ", Toast.LENGTH_SHORT
+                        "MCM y MCD", Toast.LENGTH_SHORT
                     ).show()
                 }
                 R.id.miItem3 -> {
                     startActivity(intent3)
                     Toast.makeText(
                         applicationContext,
-                        "Clicked item3 ", Toast.LENGTH_SHORT
+                        "Determinantes", Toast.LENGTH_SHORT
+                    ).show()
+                }
+                R.id.miItem4 -> {
+                    startActivity(intent4)
+                    Toast.makeText(
+                        applicationContext,
+                        "Regla de Cramer", Toast.LENGTH_SHORT
                     ).show()
                 }
             }
@@ -67,12 +74,12 @@ class Determinantes2X2 : AppCompatActivity() {
         }
 
         val btnCalDeterminante = findViewById<Button>(R.id.btnMenu2x2)
-        val num1 = findViewById<EditText>(R.id.etNumA11)
-        val num2 = findViewById<EditText>(R.id.etNumA12)
-        val num3 = findViewById<EditText>(R.id.etNumA21)
-        val num4 = findViewById<EditText>(R.id.etNumA22)
+        val num1 = findViewById<EditText>(R.id.edtA1)
+        val num2 = findViewById<EditText>(R.id.edtY1)
+        val num3 = findViewById<EditText>(R.id.etA3)
+        val num4 = findViewById<EditText>(R.id.etY3)
 
-        val resultadoText = findViewById<TextView>(R.id.tv_resul)
+        val resultadoText = findViewById<TextView>(R.id.tv_resulX)
 
 
         fun calcularDet(num1: Int, num2: Int, num3: Int, num4: Int) {
