@@ -2688,6 +2688,7 @@ id bounceStart
 id btn0
 id btn1
 id btn2
+id btn2x2
 id btn3
 id btn4
 id btn5
@@ -2697,12 +2698,12 @@ id btn8
 id btn9
 id btnC
 id btnCalcular
+id btnCramer2x2
 id btnDel
 id btnDiv
 id btnIgual
 id btnMas
 id btnMenos
-id btnMenu2x2
 id btnMenu3x3
 id btnMult
 id btnPunto

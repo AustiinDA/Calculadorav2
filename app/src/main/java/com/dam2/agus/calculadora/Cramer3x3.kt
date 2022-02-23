@@ -73,7 +73,7 @@ class Cramer3x3 : AppCompatActivity() {
             }
             true
         }
-        val btnCalDeterminante = findViewById<Button>(R.id.btnMenu2x2)
+        val btnCalDeterminante = findViewById<Button>(R.id.btnCramer2x2)
         val numa11 = findViewById<EditText>(R.id.edtA1)
         val numa12 = findViewById<EditText>(R.id.edtY1)
         val numa13 = findViewById<EditText>(R.id.etdZ1)
@@ -98,11 +98,13 @@ class Cramer3x3 : AppCompatActivity() {
             var detZ: Int = 0
             var detS: Int = 0
             //Calculo de los determinantes
-
+            var resul1: Int = 0
+            resul1 = termI1 * num22 * num33 + termI2 * num32 * num13 + termI3 * num12 * num23
+            print(resul1)
             detS =  num11 * num22 * num33 + num12 * num23 * num31 + num21 * num32 * num13 - num31 * num22 * num13 - num32 * num23 * num11 - num21 * num12 * num33
-            detX = termI1 * num22 * num33 + num12 * num23 * termI3 + num13 * termI2 * num21 - num13 * num22 * termI3 + termI1 * num23 * num32 + num12 * termI2 * num33
-            detY =  num11 * termI2 * num33 + num21 * termI3 * num13 + num31 * termI1 * num13 - num13 * termI2 * num31 + num23 * termI3 * num11 + num33 * termI1 * num21
-            detZ =  num11 * num22 * termI3 + num12 * num23 * num31 + termI1 * num21 * num32 - termI1 * num22 * num31 + num11 * termI2 * num32 + num12 * num21 * termI3
+            detX = (termI1 * num22 * num33 + termI2 * num32 * num13 + termI3 * num12 * num23) - (num13 * num22 * termI3 + num23 * num32 * termI1 + num33 * num12 * termI2)
+            detY =  (num11 * termI2 * num33 + num21 * termI3 * num13 + num31 * termI1 * num23) - (num13 * termI2 * num31 + num23 * termI3 * num11 + num33 * termI1 * num21)
+            detZ =  (num11 * num22 * termI3 + num12 * num23 * num31 + termI1 * num21 * num32) - (termI1 * num22 * num31 + num11 * termI2 * num32 + num12 * num21 * termI3)
 
             var resultadoX: Int = 0
             var resultadoY: Int = 0
@@ -130,11 +132,10 @@ class Cramer3x3 : AppCompatActivity() {
             val valor9 = numa33.text.toString().toInt()
             val deter1 = termI1.text.toString().toInt()
             val deter2 = termI2.text.toString().toInt()
-            val deter3 = termI2.text.toString().toInt()
+            val deter3 = termI3.text.toString().toInt()
             calcularIncog(valor1, valor2, valor3, valor4, valor5, valor6, valor7, valor8, valor9,deter1,deter2,deter3)
         }
     }
-
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         if (toggle.onOptionsItemSelected(item))
             true

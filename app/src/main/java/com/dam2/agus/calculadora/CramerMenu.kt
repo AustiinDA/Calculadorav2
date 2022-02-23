@@ -19,7 +19,7 @@ class CramerMenu : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_cramer_menu)
 
-        val btnMenu2x2 = findViewById<Button>(R.id.btnMenu2x2)
+        val btn2x2 = findViewById<Button>(R.id.btn2x2)
         val btnMenu3x3 = findViewById<Button>(R.id.btnMenu3x3)
 
         val toolbar: Toolbar = findViewById(R.id.toolbar);
@@ -74,7 +74,7 @@ class CramerMenu : AppCompatActivity() {
             true
         }
 
-        btnMenu2x2.setOnClickListener {
+        btn2x2.setOnClickListener {
             val intent = Intent(this, Cramer2x2::class.java)
             startActivity(intent)
         }

@@ -1,6 +1,0 @@
-com/dam2/agus/calculadora/BuildConfig.java
- com.dam2.agus.calculadora.BuildConfig
-com/dam2/agus/calculadora/databinding/McmMcdActivityBinding.java
- com.dam2.agus.calculadora.databinding.McmMcdActivityBinding
-com/dam2/agus/calculadora/databinding/ActivityMainBinding.java
- com.dam2.agus.calculadora.databinding.ActivityMainBinding

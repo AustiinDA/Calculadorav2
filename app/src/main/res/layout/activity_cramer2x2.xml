@@ -58,7 +58,7 @@
                     android:textAppearance="@style/TextAppearance.AppCompat.Display1"
                     android:textColor="#FFFFFF"
                     android:textStyle="bold"
-                    app:layout_constraintBottom_toTopOf="@+id/btnMenu2x2"
+                    app:layout_constraintBottom_toTopOf="@+id/btnCramer2x2"
                     app:layout_constraintEnd_toStartOf="@+id/textView5"
                     app:layout_constraintTop_toBottomOf="@+id/tableLayout"
                     app:layout_constraintVertical_bias="0.517" />
@@ -210,7 +210,7 @@
                 </TableLayout>
 
                 <Button
-                    android:id="@+id/btnMenu2x2"
+                    android:id="@+id/btnCramer2x2"
                     android:layout_width="368dp"
                     android:layout_height="48dp"
                     android:layout_marginBottom="204dp"
@@ -230,7 +230,7 @@
                     android:textAlignment="center"
                     android:textColor="#FFFFFF"
                     android:textStyle="bold"
-                    app:layout_constraintBottom_toTopOf="@+id/btnMenu2x2"
+                    app:layout_constraintBottom_toTopOf="@+id/btnCramer2x2"
                     app:layout_constraintEnd_toStartOf="@+id/tv_resulX"
                     app:layout_constraintHorizontal_bias="1.0"
                     app:layout_constraintStart_toStartOf="parent"
@@ -246,7 +246,7 @@
                     android:textAlignment="center"
                     android:textColor="#FFFFFF"
                     android:textStyle="bold"
-                    app:layout_constraintBottom_toTopOf="@+id/btnMenu2x2"
+                    app:layout_constraintBottom_toTopOf="@+id/btnCramer2x2"
                     app:layout_constraintEnd_toStartOf="@+id/tv_resulY"
                     app:layout_constraintTop_toBottomOf="@+id/tableLayout2"
                     app:layout_constraintVertical_bias="0.529" />

@@ -74,7 +74,7 @@ class Cramer2x2 : AppCompatActivity() {
             true
         }
 
-        val btnCalDeterminante = findViewById<Button>(R.id.btnMenu2x2)
+        val btnCalDeterminante = findViewById<Button>(R.id.btnCramer2x2)
         val num1 = findViewById<EditText>(R.id.edtA1)
         val num2 = findViewById<EditText>(R.id.edtY1)
         val num3 = findViewById<EditText>(R.id.etA3)
