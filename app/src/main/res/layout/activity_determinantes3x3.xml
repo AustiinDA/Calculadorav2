@@ -39,16 +39,16 @@
                     android:textAppearance="@style/TextAppearance.AppCompat.Display1"
                     android:textColor="#FFFFFF"
                     android:textStyle="bold"
-                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintBottom_toTopOf="@+id/btnCalDeterminante"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView"
-                    app:layout_constraintVertical_bias="0.411" />
+                    app:layout_constraintTop_toBottomOf="@+id/tableLayout"
+                    app:layout_constraintVertical_bias="0.696" />
 
                 <TableLayout
                     android:id="@+id/tableLayout"
-                    android:layout_width="373dp"
-                    android:layout_height="237dp"
+                    android:layout_width="399dp"
+                    android:layout_height="214dp"
                     android:layout_marginTop="52dp"
                     android:layout_marginEnd="1dp"
                     android:stretchColumns="*"
@@ -202,31 +202,30 @@
                 </TableLayout>
 
                 <Button
-                    android:id="@+id/btnCramer2x2"
+                    android:id="@+id/btnCalDeterminante"
                     android:layout_width="368dp"
                     android:layout_height="48dp"
+                    android:layout_marginBottom="100dp"
                     android:text="CALCULAR"
                     app:cornerRadius="15px"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.497"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/tableLayout"
-                    app:layout_constraintVertical_bias="0.235" />
+                    app:layout_constraintHorizontal_bias="0.627"
+                    app:layout_constraintStart_toStartOf="parent" />
 
                 <TextView
                     android:id="@+id/textView"
                     android:layout_width="211dp"
                     android:layout_height="24dp"
+                    android:layout_marginBottom="4dp"
                     android:text="Determinante: "
                     android:textAlignment="textStart"
                     android:textColor="#FFFFFF"
-                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintBottom_toTopOf="@+id/tv_resulX"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.11"
+                    app:layout_constraintHorizontal_bias="0.08"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/btnCramer2x2"
-                    app:layout_constraintVertical_bias="0.164" />
+                    app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
             </androidx.constraintlayout.widget.ConstraintLayout>
         </FrameLayout>
 

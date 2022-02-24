@@ -73,7 +73,7 @@ class Determinantes3X3 : AppCompatActivity() {
             }
             true
         }
-        val btnCalDeterminante = findViewById<Button>(R.id.btnMenu3x3)
+        val btnCalDet = findViewById<Button>(R.id.btnCalDeterminante)
         val numa11 = findViewById<EditText>(R.id.edtA1)
         val numa12 = findViewById<EditText>(R.id.edtY1)
         val numa13 = findViewById<EditText>(R.id.etNumA13)
@@ -109,7 +109,7 @@ class Determinantes3X3 : AppCompatActivity() {
 
 
 
-        btnCalDeterminante.setOnClickListener {
+        btnCalDet.setOnClickListener {
             val valor1 = numa11.text.toString().toInt()
             val valor2 = numa12.text.toString().toInt()
             val valor3 = numa13.text.toString().toInt()
