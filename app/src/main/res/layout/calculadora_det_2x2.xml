@@ -39,6 +39,7 @@
                     android:textAlignment="center"
                     android:textAppearance="@style/TextAppearance.AppCompat.Display1"
                     android:textColor="#FFFFFF"
+                    android:textSize="20sp"
                     android:textStyle="bold"
                     app:layout_constraintBottom_toTopOf="@+id/btnCalDet2X2"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -73,7 +74,8 @@
                             android:ems="0"
                             android:inputType="numberSigned|number"
                             android:singleLine="false"
-                            android:textColor="#F07C18" />
+                            android:textColor="#F07C18"
+                            android:textSize="20sp" />
 
                         <EditText
                             android:id="@+id/edtY1"
@@ -85,7 +87,8 @@
                             android:ems="0"
                             android:inputType="numberSigned|number"
                             android:singleLine="false"
-                            android:textColor="#F07C18" />
+                            android:textColor="#F07C18"
+                            android:textSize="20sp" />
 
                     </TableRow>
 
@@ -103,7 +106,8 @@
                             android:ems="0"
                             android:inputType="numberSigned|number"
                             android:singleLine="false"
-                            android:textColor="#F07C18" />
+                            android:textColor="#F07C18"
+                            android:textSize="20sp" />
 
                         <EditText
                             android:id="@+id/etY3"
@@ -111,11 +115,12 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_margin="5dp"
+                            android:background="@drawable/entrada_custom"
                             android:ems="0"
                             android:inputType="numberSigned|number"
                             android:singleLine="false"
                             android:textColor="#F07C18"
-                            android:background="@drawable/entrada_custom" />
+                            android:textSize="20sp" />
 
                     </TableRow>
 

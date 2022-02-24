@@ -2697,6 +2697,8 @@ id btn7
 id btn8
 id btn9
 id btnC
+id btnCalDet2X2
+id btnCalDeterminante
 id btnCalcular
 id btnCramer2x2
 id btnDel
@@ -2704,6 +2706,7 @@ id btnDiv
 id btnIgual
 id btnMas
 id btnMenos
+id btnMenu2x2
 id btnMenu3x3
 id btnMult
 id btnPunto
