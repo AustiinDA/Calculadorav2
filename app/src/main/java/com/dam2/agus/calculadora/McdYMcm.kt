@@ -90,9 +90,7 @@ class McdYMcm : AppCompatActivity() {
 
             while (true) {
                 if (mcm % num1 == 0 && mcm % num2 == 0) {
-
                     resultadoMcm = mcm
-
                     break
                 }
                 mcm++
