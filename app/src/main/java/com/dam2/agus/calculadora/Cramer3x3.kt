@@ -12,6 +12,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.drawerlayout.widget.DrawerLayout
 import com.google.android.material.navigation.NavigationView
+import java.lang.Exception
 
 class Cramer3x3 : AppCompatActivity() {
 
@@ -121,26 +122,24 @@ class Cramer3x3 : AppCompatActivity() {
         }
 
         btnCalDeterminante.setOnClickListener {
-            val valor1 = numa11?.text.toString().toInt()
-            val valor2 = numa12?.text.toString().toInt()
-            val valor3 = numa13?.text.toString().toInt()
-            val valor4 = numa21?.text.toString().toInt()
-            val valor5 = numa22?.text.toString().toInt()
-            val valor6 = numa23?.text.toString().toInt()
-            val valor7 = numa31?.text.toString().toInt()
-            val valor8 = numa32?.text.toString().toInt()
-            val valor9 = numa33?.text.toString().toInt()
-            val deter1 = termI1?.text.toString().toInt()
-            val deter2 = termI2?.text.toString().toInt()
-            val deter3 = termI3?.text.toString().toInt()
-
-            if (numa11.text.isNullOrEmpty()){
-                Toast.makeText(this, "Esta vacío",  Toast.LENGTH_SHORT).show()
-            } else {
+            try {
+                val valor1 = numa11?.text.toString().toInt()
+                val valor2 = numa12?.text.toString().toInt()
+                val valor3 = numa13?.text.toString().toInt()
+                val valor4 = numa21?.text.toString().toInt()
+                val valor5 = numa22?.text.toString().toInt()
+                val valor6 = numa23?.text.toString().toInt()
+                val valor7 = numa31?.text.toString().toInt()
+                val valor8 = numa32?.text.toString().toInt()
+                val valor9 = numa33?.text.toString().toInt()
+                val deter1 = termI1?.text.toString().toInt()
+                val deter2 = termI2?.text.toString().toInt()
+                val deter3 = termI3?.text.toString().toInt()
                 calcularIncog(valor1, valor2, valor3, valor4, valor5, valor6, valor7, valor8, valor9,deter1,deter2,deter3)
+
+            } catch (e:Exception){
+                Toast.makeText(this, "No has introducido valores",  Toast.LENGTH_SHORT).show()
             }
-
-
         }
     }
     override fun onOptionsItemSelected(item: MenuItem): Boolean {

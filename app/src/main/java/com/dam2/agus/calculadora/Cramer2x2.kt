@@ -106,27 +106,20 @@ class Cramer2x2 : AppCompatActivity() {
         }
 
         btnCalDeterminante.setOnClickListener {
-            val valor1 = num1.text.toString().toInt()
-            val valor2 = num2.text.toString().toInt()
-            val valor3 = num3.text.toString().toInt()
-            val valor4 = num4.text.toString().toInt()
-            val deter1 = termI1.text.toString().toInt()
-            val deter2 = termI2.text.toString().toInt()
-            calcularIncog(valor1, valor2, valor3, valor4, deter1, deter2)
-
-         /*   if (valor1.toString().isEmpty()){
-                    Toast.makeText(baseContext, "No has introducido valores", Toast.LENGTH_SHORT).show();
-            }else if (valor2.toString().isEmpty()){
-                    Toast.makeText(baseContext, "No has introducido valores", Toast.LENGTH_SHORT).show();
-            }else if (valor3.toString().isEmpty()){
-                    Toast.makeText(baseContext, "No has introducido valores", Toast.LENGTH_SHORT).show();
-            }else if (valor4.toString().isEmpty()){
-                    Toast.makeText(baseContext, "No has introducido valores", Toast.LENGTH_SHORT).show();
-            }else{
+            try {
+                val valor1 = num1.text.toString().toInt()
+                val valor2 = num2.text.toString().toInt()
+                val valor3 = num3.text.toString().toInt()
+                val valor4 = num4.text.toString().toInt()
+                val deter1 = termI1.text.toString().toInt()
+                val deter2 = termI2.text.toString().toInt()
+                calcularIncog(valor1, valor2, valor3, valor4, deter1, deter2)
+            } catch (e: Exception) {
+                Toast.makeText(baseContext, "No has introducido valores", Toast.LENGTH_SHORT).show();
             }
-*/
         }
     }
+
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         if (toggle.onOptionsItemSelected(item))
             true

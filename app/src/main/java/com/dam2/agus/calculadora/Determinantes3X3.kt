@@ -110,19 +110,27 @@ class Determinantes3X3 : AppCompatActivity() {
 
 
         btnCalDet.setOnClickListener {
-            val valor1 = numa11.text.toString().toInt()
-            val valor2 = numa12.text.toString().toInt()
-            val valor3 = numa13.text.toString().toInt()
-            val valor4 = numa21.text.toString().toInt()
-            val valor5 = numa22.text.toString().toInt()
-            val valor6 = numa23.text.toString().toInt()
-            val valor7 = numa31.text.toString().toInt()
-            val valor8 = numa32.text.toString().toInt()
-            val valor9 = numa33.text.toString().toInt()
+            try {
 
-            calcularDet(valor1, valor2, valor3, valor4, valor5, valor6, valor7, valor8, valor9)
+
+                val valor1 = numa11.text.toString().toInt()
+                val valor2 = numa12.text.toString().toInt()
+                val valor3 = numa13.text.toString().toInt()
+                val valor4 = numa21.text.toString().toInt()
+                val valor5 = numa22.text.toString().toInt()
+                val valor6 = numa23.text.toString().toInt()
+                val valor7 = numa31.text.toString().toInt()
+                val valor8 = numa32.text.toString().toInt()
+                val valor9 = numa33.text.toString().toInt()
+
+                calcularDet(valor1, valor2, valor3, valor4, valor5, valor6, valor7, valor8, valor9)
+            } catch (e: Exception) {
+                Toast.makeText(this, "No hay entrada introducida!", Toast.LENGTH_SHORT).show();
+                
+            }
         }
     }
+
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         if (toggle.onOptionsItemSelected(item))

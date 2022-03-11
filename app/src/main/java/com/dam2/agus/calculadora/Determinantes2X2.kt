@@ -91,12 +91,22 @@ class Determinantes2X2 : AppCompatActivity() {
         }
 
         btnCalDeterminante.setOnClickListener {
-            val valor1 = num1.text.toString().toInt()
-            val valor2 = num2.text.toString().toInt()
-            val valor3 = num3.text.toString().toInt()
-            val valor4 = num4.text.toString().toInt()
 
-            calcularDet(valor1, valor2, valor3, valor4)
+            try {
+                val valor1 = num1.text.toString().toInt()
+                val valor2 = num2.text.toString().toInt()
+                val valor3 = num3.text.toString().toInt()
+                val valor4 = num4.text.toString().toInt()
+
+                calcularDet(valor1, valor2, valor3, valor4)
+
+            } catch (e: Exception) {
+                Toast.makeText(this, "No hay entrada introducida!", Toast.LENGTH_SHORT).show();
+                num1.error = "No hay entrada"
+                num2.error = "No hay entrada"
+                num3.error = "No hay entrada"
+                num4.error = "No hay entrada"
+            }
         }
     }
 

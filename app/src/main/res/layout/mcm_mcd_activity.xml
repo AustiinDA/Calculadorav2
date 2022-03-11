@@ -77,15 +77,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
-                    android:layout_marginTop="88dp"
                     android:text="MCD"
                     android:textAlignment="center"
                     android:textColor="@color/md_theme_dark_onBackground"
                     android:textSize="20sp"
                     app:layout_constraintBottom_toTopOf="@+id/btnCalcular"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.737" />
+                    app:layout_constraintTop_toBottomOf="@+id/textoDescripcion6"
+                    app:layout_constraintVertical_bias="0.628" />
 
                 <TextView
                     android:id="@+id/textoDescripcion2"

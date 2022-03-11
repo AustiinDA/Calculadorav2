@@ -16,7 +16,8 @@
         <include
             layout="@layout/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:contentDescription="Calculadora de determinantes" />
 
         <!-- The main content view where fragments are loaded -->
         <FrameLayout
@@ -33,31 +34,28 @@
 
                 <Button
                     android:id="@+id/btnMenu3x3"
-                    android:layout_width="315dp"
-                    android:layout_height="45dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="300dp"
                     android:text="CALCULADORA 3 X 3"
                     app:cornerRadius="15px"
                     app:icon="@drawable/ic_baseline_grid_on_24"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.489"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.438" />
+                    app:layout_constraintStart_toStartOf="parent" />
 
                 <Button
                     android:id="@+id/btnMenu2x2"
-                    android:layout_width="315dp"
-                    android:layout_height="45dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:text="CALCULADORA 2 X 2"
                     app:cornerRadius="15px"
                     app:icon="@drawable/ic_baseline_grid_view_24"
-                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintBottom_toTopOf="@+id/btnMenu3x3"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.488"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.298" />
+                    app:layout_constraintVertical_bias="0.675" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
         </FrameLayout>

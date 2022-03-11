@@ -28,6 +28,7 @@ class McdYMcm : AppCompatActivity() {
         var resul1 = findViewById<TextView>(R.id.textoResul1)
         val resul2 = findViewById<TextView>(R.id.textoResul2)
 
+
         val toolbar: Toolbar = findViewById(R.id.toolbar);
 
         setSupportActionBar(toolbar)
@@ -113,11 +114,18 @@ class McdYMcm : AppCompatActivity() {
         }
 
         btnCal.setOnClickListener {
-            val valor1 = num1.text.toString().toInt()
-            val valor2 = num2.text.toString().toInt()
 
-            calcularMcm(valor1, valor2)
-            calcularMcd(valor1, valor2)
+            try {
+                val valor1 = num1.text.toString().toInt()
+                val valor2 = num2.text.toString().toInt()
+
+                calcularMcm(valor1, valor2)
+                calcularMcd(valor1, valor2)
+            } catch (e: Exception) {
+                Toast.makeText(this,"No hay entrada introducida!" , Toast.LENGTH_SHORT).show();
+                num1.error = "No hay entrada"
+                num2.error = "No hay entrada"
+            }
         }
 
     }
